@@ -15,6 +15,8 @@ const char* password = "";
 // The port to listen for incoming TCP connections 
 #define LISTEN_PORT           80
 
+//testing
+
 // Create an instance of the server
 WiFiServer server(LISTEN_PORT);
 void setup(void)
