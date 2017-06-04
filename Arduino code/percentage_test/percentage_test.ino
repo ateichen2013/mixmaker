@@ -17,6 +17,11 @@ int pump2time = 0;
 int pump3time = 0;
 int pump4time = 0;
 
+bool pump1on = false;
+bool pump2on = false;
+bool pump3on = false;
+bool pump4on = false;
+
 unsigned long ontime = 0;
 
 void setup() {
@@ -52,36 +57,48 @@ void loop() {
   Serial.println(pump4percent);
 
   digitalWrite(pump1, HIGH);
+  pump1on = true;
   digitalWrite(pump2, HIGH);
+  pump2on = true;
   digitalWrite(pump3, HIGH);
+  pump3on = true;
   digitalWrite(pump4, HIGH);
+  pump4on = true;
   Serial.println("Pumps on");
-  pump1time = pump1percent * cuptime;
-  pump2time = pump2percent * cuptime;
-  pump3time = pump3percent * cuptime;
-  pump4time = pump4percent * cuptime;
+  pump1time = pump1percent * 0.01 * cuptime;
+  pump2time = pump2percent * 0.01 * cuptime;
+  pump3time = pump3percent * 0.01 * cuptime;
+  pump4time = pump4percent * 0.01 * cuptime;
   ontime = millis();
-  while(true)
+  while(pump1on || pump2on || pump3on || pump4on)
   {
-    if (millis() >= ontime + pump1time)
+    if (millis() >= ontime + pump1time && pump1on)
     {
       digitalWrite(pump1, LOW);
+      pump1on = false;
       Serial.println("pump1 off");
     }
-    if (millis() >= ontime + pump2time)
+    if (millis() >= ontime + pump2time && pump2on)
     {
       digitalWrite(pump2, LOW);
+      pump2on = false;
       Serial.println("pump2 off");
     }
-    if (millis() >= ontime + pump3time)
+    if (millis() >= ontime + pump3time && pump3on)
     {
       digitalWrite(pump3, LOW);
+      pump3on = false;
       Serial.println("pump3 off");
     }
-    if (millis() >= ontime + pump4time)
+    if (millis() >= ontime + pump4time && pump4on)
     {
       digitalWrite(pump4, LOW);
+      pump4on = false;
       Serial.println("pump4 off");
     }
+    yield();
   }
+  digitalWrite(pump5, HIGH);
+  delay(500);
+  digitalWrite(pump5, LOW);
 }
