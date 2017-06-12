@@ -6,6 +6,7 @@ const int pump4 = D3;
 const int pump5 = D4;
 
 const int cuptime = 10000;
+const int primetime = 1000;
 
 int pump1percent = 0;
 int pump2percent = 0;
@@ -65,10 +66,22 @@ void loop() {
   digitalWrite(pump4, HIGH);
   pump4on = true;
   Serial.println("Pumps on");
-  pump1time = pump1percent * 0.01 * cuptime;
-  pump2time = pump2percent * 0.01 * cuptime;
-  pump3time = pump3percent * 0.01 * cuptime;
-  pump4time = pump4percent * 0.01 * cuptime;
+  if (pump1percent > 0)
+  {
+    pump1time = (pump1percent * 0.01 * cuptime) + primetime;
+  }
+  if (pump2percent > 0)
+  {
+    pump2time = pump2percent * 0.01 * cuptime + primetime;
+  }
+  if (pump3percent > 0)
+  {
+    pump3time = pump3percent * 0.01 * cuptime + primetime;
+  }
+  if (pump4percent > 0)
+  {
+    pump4time = pump4percent * 0.01 * cuptime + primetime;
+  }
   ontime = millis();
   while(pump1on || pump2on || pump3on || pump4on)
   {
