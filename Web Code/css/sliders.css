@@ -1,0 +1,14 @@
+/* Style for sliders */
+
+#sliders {
+    width: 200px;
+    margin:30px;
+}
+
+#sliders li {
+    margin-bottom: 10px;
+}
+
+#sliders div {
+    margin-bottom: 5px;
+}
