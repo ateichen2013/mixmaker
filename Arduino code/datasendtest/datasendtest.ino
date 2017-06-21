@@ -26,8 +26,8 @@
 
 ESP8266WebServer server;
 uint8_t pin_led = 16;
-char* ssid = "SSID";
-char* password = "PASS";
+char* ssid = "fau";
+char* password = "";
 
 Servo servo_pan;
 Servo servo_tilt;
