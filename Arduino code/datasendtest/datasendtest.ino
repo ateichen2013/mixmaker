@@ -1,56 +1,20 @@
-/*------------------------------------------------------------------------------
-  11/01/2016
-  Author: Makerbro
-  Platforms: ESP8266
-  Language: C++/Arduino
-  File: webserver_rx_json.ino
-  ------------------------------------------------------------------------------
-  Description: 
-  Code for YouTube video demonstrating how to send JSON-formatted data to a 
-  webserver running on an ESP8266.
-  https://youtu.be/Edbxyl2BhyU
-  ------------------------------------------------------------------------------
-  Please consider buying products from ACROBOTIC to help fund future
-  Open-Source projects like this! We'll always put our best effort in every
-  project, and release all our design files and code for you to use. 
-
-  https://acrobotic.com/
-  ------------------------------------------------------------------------------
-  License:
-  Please see attached LICENSE.txt file for details.
-------------------------------------------------------------------------------*/
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
-#include <Servo.h>
 #include <ArduinoJson.h>
 
-ESP8266WebServer server;
-uint8_t pin_led = 16;
-char* ssid = "fau";
-char* password = "";
+//needed for WiFiManager library
+#include <DNSServer.h>
+#include <WiFiManager.h>
 
-Servo servo_pan;
-Servo servo_tilt;
+ESP8266WebServer server;
 
 void setup()
 {
-  servo_pan.attach(D1);
-  servo_tilt.attach(D2);
-  pinMode(pin_led, OUTPUT);
-  WiFi.begin(ssid,password);
   Serial.begin(115200);
-  while(WiFi.status()!=WL_CONNECTED)
-  {
-    Serial.print(".");
-    delay(500);
-  }
-  Serial.println("");
-  Serial.print("IP Address: ");
-  Serial.println(WiFi.localIP());
+  setup_wifi();
 
   server.on("/",[](){server.send(200,"text/plain","Hello World!");});
-  server.on("/toggle",toggleLED);
-  server.on("/pantilt",setPanTilt);
+  server.on("/makedrink",receiverequest);
   server.begin();
 }
 
@@ -59,22 +23,54 @@ void loop()
   server.handleClient();
 }
 
-void toggleLED()
+void receiverequest()
 {
-  digitalWrite(pin_led,!digitalRead(pin_led));
-  Serial.println("LED toggled");
+  String drink1 = server.arg("drink1");
+  Serial.print("drink1: ");
+  Serial.println(drink1);
+  String drink2 = server.arg("drink2");
+  Serial.print("drink2: ");
+  Serial.println(drink2);
+  String drink3 = server.arg("drink3");
+  Serial.print("drink3: ");
+  Serial.println(drink3);
+  String drink4 = server.arg("drink4");
+  Serial.print("drink4: ");
+  Serial.println(drink4);
+  server.sendHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   server.send(204,"");
 }
 
-void setPanTilt()
-{
-  String data = server.arg("access_token");
-  StaticJsonBuffer<200> jBuffer;
-  JsonObject& jObject = jBuffer.parseObject(data);
-  String pan = jObject["pan"];
-  String tilt = jObject["tilt"];
-  Serial.println(pan.toInt());
-  Serial.println(tilt.toInt());
-  server.sendHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  server.send(204,"");
+void setup_wifi() {
+  WiFi.hostname("MixMaker");
+  
+  //WiFiManager
+  //Local intialization. Once its business is done, there is no need to keep it around
+  WiFiManager wifiManager;
+  //reset settings - for testing
+  //wifiManager.resetSettings();
+
+  //sets timeout until configuration portal gets turned off
+  //useful to make it all retry or go to sleep
+  //in seconds
+  wifiManager.setTimeout(180);
+  
+  //fetches ssid and pass and tries to connect
+  //if it does not connect it starts an access point with the specified name
+  //and goes into a blocking loop awaiting configuration
+  if(!wifiManager.autoConnect("MixMakerSetup")) {
+    Serial.println("failed to connect and hit timeout");
+    delay(3000);
+    //reset and try again, or maybe put it to deep sleep
+    ESP.reset();
+    delay(5000);
+  } 
+
+  //if you get here you have connected to the WiFi
+  Serial.println("connected...yeey :)");
+  
+  Serial.println("");
+  Serial.println("WiFi connected");
+  Serial.println("IP address: ");
+  Serial.println(WiFi.localIP());
 }
