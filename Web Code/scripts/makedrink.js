@@ -15,7 +15,13 @@ $(document).ready(function() {
 			},
 			dataType: 'text',
 			success: function(data) {
-				console.log("Response: " + data);
+                console.log(data)
+				if(data == "success!"){
+                    alert("Drink poured successfully")
+                }
+                else if(data == "failure!"){
+                    alert("Please insert cup")
+                }
 			}
 		});
 	});

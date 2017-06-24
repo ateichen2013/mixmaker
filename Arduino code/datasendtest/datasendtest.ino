@@ -41,6 +41,7 @@ void receiverequest()
     String drink4 = server.arg("drink4");
     Serial.print("drink4: ");
     Serial.println(drink4);
+    Serial.println();
     server.send(200,"text/plain","success!");
   }
   else
