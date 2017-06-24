@@ -26,20 +26,27 @@ void loop()
 
 void receiverequest()
 {
-  String drink1 = server.arg("drink1");
-  Serial.print("drink1: ");
-  Serial.println(drink1);
-  String drink2 = server.arg("drink2");
-  Serial.print("drink2: ");
-  Serial.println(drink2);
-  String drink3 = server.arg("drink3");
-  Serial.print("drink3: ");
-  Serial.println(drink3);
-  String drink4 = server.arg("drink4");
-  Serial.print("drink4: ");
-  Serial.println(drink4);
   server.sendHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  server.send(204,"success!");
+  if (server.arg("drink1") != 0)
+  {
+    String drink1 = server.arg("drink1");
+    Serial.print("drink1: ");
+    Serial.println(drink1);
+    String drink2 = server.arg("drink2");
+    Serial.print("drink2: ");
+    Serial.println(drink2);
+    String drink3 = server.arg("drink3");
+    Serial.print("drink3: ");
+    Serial.println(drink3);
+    String drink4 = server.arg("drink4");
+    Serial.print("drink4: ");
+    Serial.println(drink4);
+    server.send(200,"text/plain","success!");
+  }
+  else
+  {
+    server.send(200,"text/plain","rejected");
+  }
 }
 
 void setup_wifi() {
@@ -97,6 +104,8 @@ void GetExternalIP()
       uint8_t* msg = (uint8_t*)malloc(size);
       size = client.read(msg, size);
       Serial.write(msg, size);
+      Serial.println();
+      Serial.println();
       free(msg);
     }
   }
