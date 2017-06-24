@@ -28,7 +28,6 @@ $(window).load(function(){
                     // Need to do this because apparently jQ UI
                     // does not update value until this event completes
                     total += ui.value;
-                    console.log(max-ui.value);
                     $(this).siblings().text(ui.value);
                 } else {
                     return false;

@@ -4,38 +4,19 @@
 <head>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 	<script type="text/javascript" src="scripts/json2.js"></script>
+    <script type="text/javascript" src="scripts/makedrink.js"></script>
 </head>
 
 <body>
-	<input type="button" value="Capacity Chart" id="MyButton" >
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#MyButton').click(function() {
-				console.log("submitted");
-				drink1 = 12
-				drink2 = 11
-				drink3 = 10
-				drink4 = 9
-				$.ajax({
-					url: 'http://IP_ADDRESS_REMEMBER_TO_CHANGE/makedrink',
-					type: 'post',
-					data: {
-						drink1: drink1,
-						drink2: drink2,
-						drink3: drink3,
-						drink4: drink4
-					},
-					headers: {
-
-					},
-					dataType: 'text',
-					success: function(data) {
-						console.log("Response: " + data);
-					}
-				});
-			});
-		});
-	</script>
+    <p>Drink 1 %: </p>
+    <input type="text" name="Drink1" id="dr1"><br>
+    <p>Drink 2 %: </p>
+    <input type="text" name="Drink2" id="dr2"><br>
+    <p>Drink 3 %: </p>
+    <input type="text" name="Drink3" id="dr3"><br>
+    <p>Drink 4 %: </p>
+    <input type="text" name="Drink4" id="dr4"><br>
+	<input type="button" value="Make Drink" id="make" >
 </body>
 
 </html>
