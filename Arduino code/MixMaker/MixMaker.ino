@@ -177,29 +177,28 @@ int pumpdrinks()
       Serial.println("Small cup deteced");
       cuptime = scuptime;
     }
-    digitalWrite(pump1, HIGH);
-    pump1on = true;
-    digitalWrite(pump2, HIGH);
-    pump2on = true;
-    digitalWrite(pump3, HIGH);
-    pump3on = true;
-    digitalWrite(pump4, HIGH);
-    pump4on = true;
-    Serial.println("Pumps on");
     if (pump1percent > 0)
     {
+      digitalWrite(pump1, HIGH);
+      pump1on = true;
       pump1time = (pump1percent * 0.01 * cuptime) + primetime;
     }
     if (pump2percent > 0)
     {
+      digitalWrite(pump2, HIGH);
+      pump2on = true;
       pump2time = pump2percent * 0.01 * cuptime + primetime;
     }
     if (pump3percent > 0)
     {
+      digitalWrite(pump3, HIGH);
+      pump3on = true;
       pump3time = pump3percent * 0.01 * cuptime + primetime;
     }
     if (pump4percent > 0)
     {
+      digitalWrite(pump4, HIGH);
+      pump4on = true;
       pump4time = pump4percent * 0.01 * cuptime + primetime;
     }
     ontime = millis();
@@ -209,24 +208,28 @@ int pumpdrinks()
       {
         digitalWrite(pump1, LOW);
         pump1on = false;
+        pump1time = 0;
         Serial.println("pump1 off");
       }
       if (millis() >= ontime + pump2time && pump2on)
       {
         digitalWrite(pump2, LOW);
         pump2on = false;
+        pump2time = 0;
         Serial.println("pump2 off");
       }
       if (millis() >= ontime + pump3time && pump3on)
       {
         digitalWrite(pump3, LOW);
         pump3on = false;
+        pump3time = 0;
         Serial.println("pump3 off");
       }
       if (millis() >= ontime + pump4time && pump4on)
       {
         digitalWrite(pump4, LOW);
         pump4on = false;
+        pump4time = 0;
         Serial.println("pump4 off");
       }
       yield();
