@@ -6,7 +6,7 @@
 #include <DNSServer.h>
 #include <WiFiManager.h>
 
-ESP8266WebServer server;
+ESP8266WebServer server(70);
 
 void setup()
 {
@@ -16,6 +16,7 @@ void setup()
   server.on("/",[](){server.send(200,"text/plain","Hello World!");});
   server.on("/makedrink",receiverequest);
   server.begin();
+  GetExternalIP();
 }
 
 void loop()
@@ -38,7 +39,7 @@ void receiverequest()
   Serial.print("drink4: ");
   Serial.println(drink4);
   server.sendHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  server.send(204,"");
+  server.send(204,"success!");
 }
 
 void setup_wifi() {
@@ -73,4 +74,30 @@ void setup_wifi() {
   Serial.println("WiFi connected");
   Serial.println("IP address: ");
   Serial.println(WiFi.localIP());
+}
+
+void GetExternalIP()
+{
+  WiFiClient client;
+  if (!client.connect("api.ipify.org", 80)) {
+    Serial.println("Failed to connect with 'api.ipify.org' !");
+  }
+  else {
+    int timeout = millis() + 5000;
+    client.print("GET /?format=json HTTP/1.1\r\nHost: api.ipify.org\r\n\r\n");
+    while (client.available() == 0) {
+      if (timeout - millis() < 0) {
+        Serial.println(">>> Client Timeout !");
+        client.stop();
+        return;
+      }
+    }
+    int size;
+    while ((size = client.available()) > 0) {
+      uint8_t* msg = (uint8_t*)malloc(size);
+      size = client.read(msg, size);
+      Serial.write(msg, size);
+      free(msg);
+    }
+  }
 }

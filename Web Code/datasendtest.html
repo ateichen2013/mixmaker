@@ -1,32 +1,41 @@
 <!DOCTYPE html>
 <html>
-	<head>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-        <script type="text/javascript" src="scripts/json2.js"></script>
-        <script type="text/javascript">
-         $(function() {
-           var dat = '{pan:"34", tilt:"106"}'
 
-           alert("I am about to POST this:\n\n" + dat);
-             
-            $.ajax({
-                url: 'http://10.12.33.254/pantilt',
-                type: 'post',
-                data: {
-                    access_token: dat
-                },
-                headers: {
-                    'X-Requested-With': 'XMLHttpRequest'
-                },
-                dataType: 'json',
-                success: function (data) {
-                    alert("Response: " + data);
-                }
-            });
-         });
-        </script>
-    </head>
-    <body>
-        
-    </body>
+<head>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/json2.js"></script>
+</head>
+
+<body>
+	<input type="button" value="Capacity Chart" id="MyButton" >
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#MyButton').click(function() {
+				console.log("submitted");
+				drink1 = 12
+				drink2 = 11
+				drink3 = 10
+				drink4 = 9
+				$.ajax({
+					url: 'http://IP_ADDRESS_REMEMBER_TO_CHANGE/makedrink',
+					type: 'post',
+					data: {
+						drink1: drink1,
+						drink2: drink2,
+						drink3: drink3,
+						drink4: drink4
+					},
+					headers: {
+
+					},
+					dataType: 'text',
+					success: function(data) {
+						console.log("Response: " + data);
+					}
+				});
+			});
+		});
+	</script>
+</body>
+
 </html>
