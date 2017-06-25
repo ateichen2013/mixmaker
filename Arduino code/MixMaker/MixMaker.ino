@@ -57,10 +57,11 @@ void setup() {
   Serial.begin(115200);
   setup_wifi();
 
+  GetExternalIP();
+
   server.on("/",[](){server.send(200,"text/plain","Hello World!");});
   server.on("/makedrink",receiverequest);
   server.begin();
-  GetExternalIP();
 }
 
 void loop() {
