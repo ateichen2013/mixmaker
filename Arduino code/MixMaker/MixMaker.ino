@@ -6,7 +6,7 @@
 #include <DNSServer.h>
 #include <WiFiManager.h>
 
-ESP8266WebServer server(70);
+ESP8266WebServer server(80);
 
 //Pump pins
 const int pump1 = D0;
