@@ -2,13 +2,13 @@ $(document).ready(function() {
 	$('#make').click(function() {
 		console.log("submitted");
 		$.ajax({
-			url: 'http://131.91.4.35:80/makedrink',
+			url: 'http://192.168.1.1:80/makedrink',
 			type: 'post',
 			data: {
-				drink1: $('#dr1').text(),
-				drink2: $('#dr2').text(),
-				drink3: $('#dr3').text(),
-				drink4: $('#dr4').text()
+				drink1: $('#dr1').val(),
+				drink2: $('#dr2').val(),
+				drink3: $('#dr3').val(),
+				drink4: $('#dr4').val()
 			},
 			headers: {
 
