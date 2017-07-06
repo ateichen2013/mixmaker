@@ -9,16 +9,16 @@ $(window).load(function(){
             value: 0,
             min: 0,
             max: 100,
-            range: "max",
+            range: "min",
             step: 1,
             animate: 100,
-            slide: function(event, ui) {
+            create: function(event, ui) {
 
                 // Get current total
                 var total = 0;    
 
                 sliders.not(this).each(function() {
-                    total += $(this).slider("option", "value");
+                    total += $(this).value;
                 });    
 
 

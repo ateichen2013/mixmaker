@@ -2,7 +2,7 @@ $(document).ready(function() {
 	$('#make').click(function() {
 		console.log("submitted");
 		$.ajax({
-			url: 'http://192.168.1.1:80/makedrink',
+			url: 'http://10.10.0.29:80/makedrink',
 			type: 'post',
 			data: {
 				drink1: $('#dr1').text(),
