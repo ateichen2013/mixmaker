@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$('#make').click(function() {
+	$('.MakeDrink').click(function() {
 		console.log("submitted");
 		$.ajax({
 			url: 'http://10.10.0.29:80/makedrink',
