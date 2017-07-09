@@ -19,8 +19,6 @@
 		<link href="css/MM.css" rel="stylesheet">
 		<link href="css/jumbotron.css" rel="stylesheet">
 		<link href="css/bootstrap.css" rel="stylesheet">
-		<link href="css/sliders.css" rel="stylesheet">
-		<link href="css/jquery-ui.css" rel="stylesheet" type="text/css">
 	</head>
 	<body id="page-top" class="index" onload="">
 		<!-- Home Page -->
@@ -150,26 +148,32 @@
 				<a href="#pageHome" class=" ui-icon-arrow-l ui-btn-icon-left"></a>
 			</div>
 			<body>
-				<div>
-					<ul id="sliders">
-						<li>
-							<div class="slider"></div>
-							<span class="value" id="dr1">0</span>
-						</li>
-						<li>
-							<div class="slider"></div>
-							<span class="value" id="dr2">0</span>
-						</li>
-						<li>
-							<div class="slider"></div>
-							<span class="value" id="dr3">0</span>
-						</li>
-						<li>
-							<div class="slider"></div>
-							<span class="value" id="dr4">0</span>
-						</li>
-						<input type="button" value="Make Drink" class="MakeDrink">
-					</ul>
+				<div id="sliders">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3 div-slider">
+                            <div class="slider"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3 div-slider">
+                            <input type="range" name="slider" id="slider" value="0" min="0" max="100"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3 div-slider">
+                            <input type="range" name="slider" id="slider" value="0" min="0" max="100"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3 div-slider">
+                            <input type="range" name="slider" id="slider" value="0" min="0" max="100"/>
+                        </div>
+                    </div>
+                    <div class="row" >
+                        <div class="col-sm-4 col-sm-offset-4 text-center">
+						  <input type="button" value="Make Drink" class="MakeDrink">
+                        </div>
+                    </div>
 				</div>
 	</body>
 	</div>
