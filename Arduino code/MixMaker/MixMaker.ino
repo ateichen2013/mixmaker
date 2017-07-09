@@ -57,8 +57,6 @@ void setup() {
   Serial.begin(115200);
   setup_wifi();
 
-  GetExternalIP();
-
   server.on("/",[](){server.send(200,"text/plain","Hello World!");});
   server.on("/makedrink",receiverequest);
   server.begin();
@@ -118,7 +116,7 @@ void setup_wifi() {
   //fetches ssid and pass and tries to connect
   //if it does not connect it starts an access point with the specified name
   //and goes into a blocking loop awaiting configuration
-  if(!wifiManager.startConfigPortal("MixMakerSetup")) {
+  if(!wifiManager.autoConnect("MixMakerSetup", "ed2mixmaker")) {
     Serial.println("failed to connect and hit timeout");
     delay(3000);
     //reset and try again, or maybe put it to deep sleep
@@ -133,34 +131,6 @@ void setup_wifi() {
   Serial.println("WiFi connected");
   Serial.println("IP address: ");
   Serial.println(WiFi.localIP());
-}
-
-void GetExternalIP()
-{
-  WiFiClient client;
-  if (!client.connect("api.ipify.org", 80)) {
-    Serial.println("Failed to connect with 'api.ipify.org' !");
-  }
-  else {
-    int timeout = millis() + 5000;
-    client.print("GET /?format=json HTTP/1.1\r\nHost: api.ipify.org\r\n\r\n");
-    while (client.available() == 0) {
-      if (timeout - millis() < 0) {
-        Serial.println(">>> Client Timeout !");
-        client.stop();
-        return;
-      }
-    }
-    int size;
-    while ((size = client.available()) > 0) {
-      uint8_t* msg = (uint8_t*)malloc(size);
-      size = client.read(msg, size);
-      Serial.write(msg, size);
-      Serial.println();
-      Serial.println();
-      free(msg);
-    }
-  }
 }
 
 int pumpdrinks()

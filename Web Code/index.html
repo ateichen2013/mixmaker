@@ -103,7 +103,7 @@
 							<img src="img/Preset_Logo_3.png" class="img-responsive" alt="">
 							</a>
 							<div class="portfolio-caption">
-								<h4>Purple Suspense</h4>
+								<h4>Pat's Purple Suspense</h4>
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-6 portfolio-item">
@@ -151,27 +151,27 @@
 				<div id="sliders">
                     <div class="row">
                         <div class="col-sm-6 col-sm-offset-3 div-slider">
-                            <div class="slider"></div>
+                            <input type="range" name="slider" id="slider1" value="0" min="0" max="100"/>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-6 col-sm-offset-3 div-slider">
-                            <input type="range" name="slider" id="slider" value="0" min="0" max="100"/>
+                            <input type="range" name="slider" id="slider2" value="0" min="0" max="100"/>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-6 col-sm-offset-3 div-slider">
-                            <input type="range" name="slider" id="slider" value="0" min="0" max="100"/>
+                            <input type="range" name="slider" id="slider3" value="0" min="0" max="100"/>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-6 col-sm-offset-3 div-slider">
-                            <input type="range" name="slider" id="slider" value="0" min="0" max="100"/>
+                            <input type="range" name="slider" id="slider4" value="0" min="0" max="100"/>
                         </div>
                     </div>
                     <div class="row" >
                         <div class="col-sm-4 col-sm-offset-4 text-center">
-						  <input type="button" value="Make Drink" class="MakeDrink">
+						  <button type="button" class="btn btn-primary" onclick="MakeDrinkSlider()">Make Drink</button>
                         </div>
                     </div>
 				</div>
@@ -252,16 +252,25 @@
 						<div class="col-lg-8 col-lg-offset-2">
 							<div class="modal-body">
 								<!-- Drink Details Go Here -->
-								<h2>Big Jumble</h2>
-								<img class="img-centered" height="250" src="img/Preset_Logo_1.png" alt="">
-								<p>
-									<strong>Information about the drink</strong>
-								</p>
+                                <div class="row">
+								    <h2>Big Jumble</h2>
+                                </div>
+                                <div class="row">
+								    <img class="img-centered" height="250" src="img/Preset_Logo_1.png" alt="">
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <strong>Information about the drink</strong>
+                                    </p>
+                                </div>
 								<!--<a href="#anylink" class="ui-btn">Make Drink</a>-->
                                 <!--<a href="#pagetwo" class="ui-btn ui-btn-inline" data-dismiss="modal">Make Drink</a>-->
-								<button type="button" class="btn btn-primary" onclick="MakeDrink(25, 25, 25, 25)">Make Drink</button>
-								<br><br>
-								<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Back</button>
+                                <div class="row">
+								    <button type="button" class="btn btn-primary" onclick="MakeDrink(25, 25, 25, 25)">Make Drink</button>
+                                </div>
+								<div class="row">
+								    <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Back</button>
+                                </div>
 							</div>
 						</div>
 					</div>
