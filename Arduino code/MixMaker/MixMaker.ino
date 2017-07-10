@@ -137,10 +137,10 @@ int pumpdrinks()
 {
   if(digitalRead(sensor1) == LOW)
   {
-    Serial.println("Cup deteced");
+    Serial.println("Cup detected");
     if(digitalRead(sensor2) == LOW)
     {
-      Serial.println("Large cup deteced");
+      Serial.println("Large cup detected");
       cuptime = lcuptime;
     }
     else
