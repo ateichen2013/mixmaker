@@ -12,17 +12,17 @@ ESP8266WebServer server(80);
 const int pump1 = D0;
 const int pump2 = D1;
 const int pump3 = D2;
-const int pump4 = D3;
-const int pump5 = D4;
+const int pump4 = D6;
+const int pump5 = D7;
 
 //Sensor pins
-const int sensor1 = D6;
-const int sensor2 = D7;
+const int sensor1 = D3;
+const int sensor2 = D4;
 
 const int scuptime = 10000;
 const int lcuptime = 20000;
 int cuptime = 10000;
-const int primetime = 1000;
+const int primetime = 2000;
 
 int pump1percent = 0;
 int pump2percent = 0;
