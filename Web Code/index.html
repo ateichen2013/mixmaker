@@ -148,32 +148,37 @@
 				<a href="#pageHome" class=" ui-icon-arrow-l ui-btn-icon-left"></a>
 			</div>
 			<body>
-				<div id="sliders">
-                    <div class="row">
-                        <div class="col-sm-6 col-sm-offset-3 div-slider">
-                            <input type="range" name="slider" id="slider1" value="0" min="0" max="100"/>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6 col-sm-offset-3 div-slider">
-                            <input type="range" name="slider" id="slider2" value="0" min="0" max="100"/>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6 col-sm-offset-3 div-slider">
-                            <input type="range" name="slider" id="slider3" value="0" min="0" max="100"/>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6 col-sm-offset-3 div-slider">
-                            <input type="range" name="slider" id="slider4" value="0" min="0" max="100"/>
-                        </div>
-                    </div>
-                    <div class="row" >
-                        <div class="col-sm-4 col-sm-offset-4 text-center">
-						  <button type="button" class="btn btn-primary" onclick="MakeDrinkSlider()">Make Drink</button>
-                        </div>
-                    </div>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 col-sm-offset-3 text-center">
+							<h2>Custom Drink</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 col-sm-offset-3 div-slider">
+							<input type="range" name="slider" id="slider1" value="0" min="0" max="100"/>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 col-sm-offset-3 div-slider">
+							<input type="range" name="slider" id="slider2" value="0" min="0" max="100"/>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 col-sm-offset-3 div-slider">
+							<input type="range" name="slider" id="slider3" value="0" min="0" max="100"/>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 col-sm-offset-3 div-slider">
+							<input type="range" name="slider" id="slider4" value="0" min="0" max="100"/>
+						</div>
+					</div>
+					<div class="row" >
+						<div class="col-sm-4 col-sm-offset-4 text-center">
+							<button type="button" class="btn btn-primary" onclick="MakeDrinkSlider()">Make Drink</button>
+						</div>
+					</div>
 				</div>
 	</body>
 	</div>
@@ -252,25 +257,26 @@
 						<div class="col-lg-8 col-lg-offset-2">
 							<div class="modal-body">
 								<!-- Drink Details Go Here -->
-                                <div class="row">
-								    <h2>Big Jumble</h2>
-                                </div>
-                                <div class="row">
-								    <img class="img-centered" height="250" src="img/Preset_Logo_1.png" alt="">
-                                </div>
-                                <div class="row">
-                                    <p>
-                                        <strong>Information about the drink</strong>
-                                    </p>
-                                </div>
-								<!--<a href="#anylink" class="ui-btn">Make Drink</a>-->
-                                <!--<a href="#pagetwo" class="ui-btn ui-btn-inline" data-dismiss="modal">Make Drink</a>-->
-                                <div class="row">
-								    <button type="button" class="btn btn-primary" onclick="MakeDrink(25, 25, 25, 25)">Make Drink</button>
-                                </div>
 								<div class="row">
-								    <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Back</button>
-                                </div>
+									<h2>Big Jumble</h2>
+								</div>
+								<div class="row">
+									<img class="img-centered" height="250" src="img/Preset_Logo_1.png" alt="">
+								</div>
+								<div class="row">
+									<p>
+										<strong>Information about the drink</strong>
+									</p>
+								</div>
+								<!--<a href="#anylink" class="ui-btn">Make Drink</a>-->
+								<!--<a href="#pagetwo" class="ui-btn ui-btn-inline" data-dismiss="modal">Make Drink</a>-->
+								<div class="row">
+									<button type="button" class="btn btn-primary" onclick="MakeDrink(25, 25, 25, 25)">Make Drink</button>
+								</div>
+								<br>
+								<div class="row">
+									<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Back</button>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -293,15 +299,24 @@
 						<div class="col-lg-8 col-lg-offset-2">
 							<div class="modal-body">
 								<!-- Drink Details Go Here -->
-								<h2>Lemon Wonder</h2>
-								<img class="img-centered" height="250" src="img/Preset_Logo_2.png" alt="">
-								<p>
-									<strong>Information about the drink</strong>
-								</p>
-								<!--<a href="#anylink" class="ui-btn">Make Drink</a>-->
-								<button type="button" class="btn btn-primary" onclick="MakeDrink(0, 35, 20, 45)">Make Drink</button>
-								<br><br>
-								<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Back</button>
+								<div class="row">
+									<h2>Lemon Wonder</h2>
+								</div>
+								<div class="row">
+									<img class="img-centered" height="250" src="img/Preset_Logo_2.png" alt="">
+								</div>
+								<div class="row">
+									<p>
+										<strong>Information about the drink</strong>
+									</p>
+								</div>
+								<div class="row">
+									<button type="button" class="btn btn-primary" onclick="MakeDrink(0, 35, 20, 45)">Make Drink</button>
+								</div>
+								<br>
+								<div class="row">
+									<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Back</button>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -324,15 +339,24 @@
 						<div class="col-lg-8 col-lg-offset-2">
 							<div class="modal-body">
 								<!-- Drink Details Go Here -->
-								<h2>Purple Suspense</h2>
-								<img class="img-centered" height="250" src="img/Preset_Logo_3.png" alt="">
-								<p>
-									<strong>Information about the drink</strong>
-								</p>
-								<!--<a href="#anylink" class="ui-btn">Make Drink</a>-->
-								<button type="button" class="btn btn-primary" onclick="MakeDrink(10, 10, 75, 5)">Make Drink</button>
-								<br><br>
-								<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Back</button>
+								<div class="row">
+									<h2>Purple Suspense</h2>
+								</div>
+								<div class="row">
+									<img class="img-centered" height="250" src="img/Preset_Logo_3.png" alt="">
+								</div>
+								<div class="row">
+									<p>
+										<strong>Information about the drink</strong>
+									</p>
+								</div>
+								<div class="row">
+									<button type="button" class="btn btn-primary" onclick="MakeDrink(10, 10, 75, 5)">Make Drink</button>
+								</div>
+								<br>
+								<div class="row">
+									<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Back</button>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -355,15 +379,24 @@
 						<div class="col-lg-8 col-lg-offset-2">
 							<div class="modal-body">
 								<!-- Drink Details Go Here -->
-								<h2>Fruity Apple</h2>
-								<img class="img-centered" height="250" src="img/Preset_Logo_4.png" alt="">
-								<p>
-									<strong>Information about the drink</strong>
-								</p>
-								<!--<a href="#anylink" class="ui-btn">Make Drink</a>-->
-								<button type="button" class="btn btn-primary" onclick="MakeDrink(50, 50, 0, 0)">Make Drink</button>
-								<br><br>
-								<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Back</button>
+								<div class="row">
+									<h2>Fruity Apple</h2>
+								</div>
+								<div class="row">
+									<img class="img-centered" height="250" src="img/Preset_Logo_4.png" alt="">
+								</div>
+								<div class="row">
+									<p>
+										<strong>Information about the drink</strong>
+									</p>
+								</div>
+								<div class="row">
+									<button type="button" class="btn btn-primary" onclick="MakeDrink(50, 50, 0, 0)">Make Drink</button>
+								</div>
+								<br>
+								<div class="row">
+									<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Back</button>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -371,7 +404,7 @@
 			</div>
 		</div>
 	</div>
-    <!-- Preset Modal 5 -->
+	<!-- Preset Modal 5 -->
 	<div class="portfolio-modal modal" id="PresetModal5" tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -386,15 +419,24 @@
 						<div class="col-lg-8 col-lg-offset-2">
 							<div class="modal-body">
 								<!-- Drink Details Go Here -->
-								<h2>FAU Deluxe</h2>
-								<img class="img-centered" height="250" src="img/Preset_Logo_5.png" alt="">
-								<p>
-									<strong>Information about the drink</strong>
-								</p>
-								<!--<a href="#anylink" class="ui-btn">Make Drink</a>-->
-								<button type="button" class="btn btn-primary" onclick="MakeDrink(0, 45, 35, 20)">Make Drink</button>
-								<br><br>
-								<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Back</button>
+								<div class="row">
+									<h2>FAU Deluxe</h2>
+								</div>
+								<div class="row">
+									<img class="img-centered" height="250" src="img/Preset_Logo_5.png" alt="">
+								</div>
+								<div class="row">
+									<p>
+										<strong>Information about the drink</strong>
+									</p>
+								</div>
+								<div class="row">
+									<button type="button" class="btn btn-primary" onclick="MakeDrink(0, 45, 35, 20)">Make Drink</button>
+								</div>
+								<br>
+								<div class="row">
+									<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Back</button>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -402,7 +444,7 @@
 			</div>
 		</div>
 	</div>
-    <!-- Preset Modal 6 -->
+	<!-- Preset Modal 6 -->
 	<div class="portfolio-modal modal" id="PresetModal6" tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -417,15 +459,24 @@
 						<div class="col-lg-8 col-lg-offset-2">
 							<div class="modal-body">
 								<!-- Drink Details Go Here -->
-								<h2>Punch Paradise</h2>
-								<img class="img-centered" height="250" src="img/Preset_Logo_6.png" alt="">
-								<p>
-									<strong>Information about the drink</strong>
-								</p>
-								<!--<a href="#anylink" class="ui-btn">Make Drink</a>-->
-								<button type="button" class="btn btn-primary" onclick="MakeDrink(20, 60, 20, 0)">Make Drink</button>
-								<br><br>
-								<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Back</button>
+								<div class="row">
+									<h2>Punch Paradise</h2>
+								</div>
+								<div class="row">
+									<img class="img-centered" height="250" src="img/Preset_Logo_6.png" alt="">
+								</div>
+								<div class="row">
+									<p>
+										<strong>Information about the drink</strong>
+									</p>
+								</div>
+								<div class="row">
+									<button type="button" class="btn btn-primary" onclick="MakeDrink(20, 60, 20, 0)">Make Drink</button>
+								</div>
+								<br>
+								<div class="row">
+									<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Back</button>
+								</div>
 							</div>
 						</div>
 					</div>
