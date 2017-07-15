@@ -145,7 +145,7 @@ int pumpdrinks()
     }
     else
     {
-      Serial.println("Small cup deteced");
+      Serial.println("Small cup detected");
       cuptime = scuptime;
     }
     if (pump1percent > 0)
@@ -213,7 +213,7 @@ int pumpdrinks()
   }
   else
   {
-    Serial.println("No cup deteced");
+    Serial.println("No cup detected");
     Serial.println();
     return 0;
   }
