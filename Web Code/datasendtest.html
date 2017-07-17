@@ -2,64 +2,20 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <!--Adjusting the page on mobile screen  -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-    <title>Mix Maker</title>
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- CSS -->
-    <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
+
+  <title>jQuery Mobile page</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/themes/mixmakertheme.css" />
+  <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+
 </head>
 
 <body>
-    <div id="sliders">
-        <div class="row">
-            <div class="col-sm-6 col-sm-offset-3 div-slider">
-                <div class="slider"></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 col-sm-offset-3 div-slider">
-                <div class="slider"></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 col-sm-offset-3 div-slider">
-                <div class="slider"></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 col-sm-offset-3 div-slider">
-                <input type="range" name="slider" data-track-theme="c" 
-        data-highlight="true" id="slider-step1" step="10" 
-        value="0" min="0" max="100" />
-            </div>
-        </div>
-        <div class="row" >
-            <div class="col-sm-4 col-sm-offset-4 text-center">
-              <input type="button" value="Make Drink" class="MakeDrink">
-            </div>
-        </div>
-    </div>
-    <p>Drink 1 %: </p>
-    <input type="text" name="Drink1" id="dr1"><br>
-    <p>Drink 2 %: </p>
-    <input type="text" name="Drink2" id="dr2"><br>
-    <p>Drink 3 %: </p>
-    <input type="text" name="Drink3" id="dr3"><br>
-    <p>Drink 4 %: </p>
-    <input type="text" name="Drink4" id="dr4"><br>
-	<input type="button" value="Make Drink" id="make" >
-    <!-- Scripts -->
-	<script src="https://code.jquery.com/jquery-1.11.0.js" integrity="sha256-zgND4db0iXaO7v4CLBIYHGoIIudWI5hRMQrPB20j0Qw=" crossorigin="anonymous"></script>
-	<script src="scripts/jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>
-	<!-- Bootstrap Core JavaScript -->
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-	<!-- Custom Scripts -->
-	<script src="scripts/newsliders.js"></script>
-	<script type="text/javascript" src="scripts/makedrink.js"></script>
+    <input type="range" name="slider" id="slider1" value="0" min="0" max="100" data-highlight="true" data-track-theme="c">
 </body>
 
 </html>
