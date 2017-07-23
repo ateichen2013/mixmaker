@@ -468,7 +468,7 @@
 		</div>
 	</div>
     <!-- PHP -->
-    <?php include 'PHP/db_connect.php';?>
+    
 	<!-- Scripts -->
 	<script src="scripts/jquery-1.12.4.js"></script>
 	<script src="scripts/jquery-ui.js"></script>
