@@ -199,7 +199,7 @@
 		<section id="portfolio" style="background-color:powderblue;">
 			<div class="container">
 				<div class="row">
-                    <?php echo getDrinks($db); ?>
+                    <?php echo getDrinks($db);
 					<div data-role="main" class="ui-content">
 						<a href="#pageHome" class=" ui-icon-arrow-l ui-btn-icon-left"></a>
 					</div>
