@@ -44,4 +44,57 @@ function getDrinks($_db)
     
     return $output;
 }
+
+function getDrinkModals($_db)
+{
+    $query = "SELECT drinkid, drinkname, drink1, drink2, drink3, drink4 FROM drinks ORDER BY drinkid DESC";
+    
+    if(!$result = $_db->query($query))
+    {
+        die('There was an error running the query [' . $_db->error . ']');
+    }
+    
+    $output = '';
+    while($row = $result->fetch_assoc())
+    {   
+        $output = $output . '<div class="portfolio-modal modal" id="SavedModal' . $row['drinkid'] . '" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl">
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 col-lg-offset-2">
+							<div class="modal-body">
+								<!-- Drink Details Go Here -->
+								<div class="row">
+									<h2>' . $row['drinkname'] . '</h2>
+								</div>
+								<div class="row">
+									<img class="img-centered" height="250" src="img/Preset_Logo_1.png" alt="">
+								</div>
+								<!--<a href="#anylink" class="ui-btn">Make Drink</a>-->
+								<!--<a href="#pagetwo" class="ui-btn ui-btn-inline" data-dismiss="modal">Make Drink</a>-->
+								<div class="row">
+									<button type="button" class="btn btn-primary" onclick="MakeDrink(' . $row['drink1'] . ',' . $row['drink2'] . ',' . $row['drink3'] . ',' . $row['drink4'] . ')">Make Drink</button>
+								</div>
+								<br>
+								<div class="row">
+									<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Back</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>'
+    }
+    
+    return $output;
+}
 ?>

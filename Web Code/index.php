@@ -205,51 +205,6 @@ include("functions.php");
 			<div class="container">
 				<div class="row">
                     <?php echo getDrinks($db); ?>
-                    <!-- Preset Modal 1 -->
-                    <div class="portfolio-modal modal" id="SavedModal1" tabindex="-1" role="dialog" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="close-modal" data-dismiss="modal">
-                                    <div class="lr">
-                                        <div class="rl">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-lg-8 col-lg-offset-2">
-                                            <div class="modal-body">
-                                                <!-- Drink Details Go Here -->
-                                                <div class="row">
-                                                    <h2>Test</h2>
-                                                </div>
-                                                <div class="row">
-                                                    <img class="img-centered" height="250" src="img/Preset_Logo_1.png" alt="">
-                                                </div>
-                                                <div class="row">
-                                                    <p>
-                                                        <strong>Drink Description</strong>
-                                                    </p>
-                                                    <p>
-                                                        Have a taste of the rainbow with this great, highly mixed drink and enjoy a huge variety of flavor that will make your taste buds go wild.
-                                                    </p>
-                                                </div>
-                                                <!--<a href="#anylink" class="ui-btn">Make Drink</a>-->
-                                                <!--<a href="#pagetwo" class="ui-btn ui-btn-inline" data-dismiss="modal">Make Drink</a>-->
-                                                <div class="row">
-                                                    <button type="button" class="btn btn-primary" onclick="MakeDrink(25, 25, 25, 25)">Make Drink</button>
-                                                </div>
-                                                <br>
-                                                <div class="row">
-                                                    <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Back</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 					<div data-role="main" class="ui-content">
 						<a href="#pageHome" class=" ui-icon-arrow-l ui-btn-icon-left"></a>
 					</div>
@@ -518,6 +473,8 @@ include("functions.php");
 			</div>
 		</div>
 	</div>
+    <!-- Saved Modals -->
+    <?php echo getDrinkModals($db); ?>
 	<!-- Scripts -->
 	<script src="scripts/jquery-1.12.4.js"></script>
 	<script src="scripts/jquery-ui.js"></script>
