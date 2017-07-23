@@ -199,6 +199,7 @@
 		<section id="portfolio" style="background-color:powderblue;">
 			<div class="container">
 				<div class="row">
+                    <?php echo getDrinks($db); ?>
 					<div data-role="main" class="ui-content">
 						<a href="#pageHome" class=" ui-icon-arrow-l ui-btn-icon-left"></a>
 					</div>
@@ -469,6 +470,7 @@
 	</div>
     <!-- PHP -->
     <?php include 'PHP/db_connect.php';?>
+    <?php include 'PHP/functions.php';?>
 	<!-- Scripts -->
 	<script src="scripts/jquery-1.12.4.js"></script>
 	<script src="scripts/jquery-ui.js"></script>
