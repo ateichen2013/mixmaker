@@ -7,8 +7,8 @@ $server_root = dirname($_SERVER['PHP_SELF']);
 // Be sure to use $db->close(); at the end of each php file that includes this!
 
 $dbhost = "localhost"; // Most likely will not need to be changed
-$dbname = "mixmaker"; // needs to be changed to your designated table name
-$dbuser = "mysql"; // needs to be changed to reflect LAMP server credentials
+$dbname = "drinks"; // needs to be changed to your designated table name
+$dbuser = "root"; // needs to be changed to reflect LAMP server credentials
 $dbpass = "ed2mixmaker"; // needs to be changed to reflect LAMP server credentials
 
 $db = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
