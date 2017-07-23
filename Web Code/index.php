@@ -1,3 +1,8 @@
+<?php
+require_once "php/db_connect.php";
+require_once "php/functions.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -468,9 +473,6 @@
 			</div>
 		</div>
 	</div>
-    <!-- PHP -->
-    <?php include 'PHP/db_connect.php';?>
-    <?php include 'PHP/functions.php';?>
 	<!-- Scripts -->
 	<script src="scripts/jquery-1.12.4.js"></script>
 	<script src="scripts/jquery-ui.js"></script>
