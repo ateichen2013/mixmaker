@@ -92,7 +92,7 @@ function getDrinkModals($_db)
 				</div>
 			</div>
 		</div>
-	</div>'
+	</div>';
     }
     
     return $output;
