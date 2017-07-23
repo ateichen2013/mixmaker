@@ -78,8 +78,8 @@ function getDrinks($_db)
 				</div>
 			</div>
 		</div>
-	</div>
-    }'*/
+	</div>'*/
+    }
     
     return $output;
 }
