@@ -1,6 +1,6 @@
 <?php
-require_once "php/db_connect.php";
-require_once "php/functions.php";
+include("php/db_connect.php");
+include("php/functions.php");
 ?>
 
 <!DOCTYPE html>
