@@ -33,7 +33,7 @@ function getDrinks($_db)
     while($row = $result->fetch_assoc())
     {   
         $output = $output . '<div class="col-md-4 col-sm-6 portfolio-item">
-            <a href="#PresetModal1" class="portfolio-link" data-toggle="modal">
+            <a href="#SavedModal1" class="portfolio-link" data-toggle="modal">
             <img src="img/Preset_Logo_1.png" class="img-responsive" alt="">
             </a>
             <div class="portfolio-caption">
