@@ -1,6 +1,7 @@
 <?php
 include("db_connect.php");
 include("functions.php");
+include("save.php");
 ?>
 
 <!DOCTYPE html>
@@ -184,11 +185,16 @@ include("functions.php");
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-sm-4 col-sm-offset-3 text-center">
-							<button type="button" class="btn btn-primary" onclick="MakeDrinkSlider()">Make Drink</button>
+						<div class="col-sm-2 text-center">
+							<button type="button" class="btn btn-primary" onclick="SaveDrink()">Save</button>
 						</div>
                         <div class="col-sm-2 text-center">
-							<button type="button" class="btn btn-primary" onclick="MakeDrinkSlider()">Randomize</button>
+							<button type="button" class="btn btn-primary" onclick="Randomize()()">Randomize</button>
+						</div>
+					</div>
+                    <div class="row">
+						<div class="col-sm-4 col-sm-offset-3 text-center">
+							<button type="button" class="btn btn-primary" onclick="MakeDrinkSlider()">Make Drink</button>
 						</div>
 					</div>
 				</div>
