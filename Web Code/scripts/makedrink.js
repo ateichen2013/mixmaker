@@ -25,6 +25,22 @@ function MakeDrink(dr1, dr2, dr3, dr4) {
     });
 }
 
+function SaveDrinkSlider() {
+    console.log("saved");
+    $.ajax({
+        url: 'save.php',
+        type: 'post',
+        data: {
+            _db: ,
+            _drinkname: $("#drname").val(),
+            _drink1: $("#slider1").val(),
+            _drink2: $("#slider2").val(),
+            _drink3: $("#slider3").val(),
+            _drink4: $("#slider4").val()
+        }
+    });
+}
+
 function MakeDrinkSlider() {
     console.log("submitted");
     $.ajax({
@@ -48,22 +64,6 @@ function MakeDrinkSlider() {
             else if(data == "failure!"){
                 alert("Please insert cup")
             }
-        }
-    });
-}
-
-function SaveDrinkSlider() {
-    console.log("saved");
-    $.ajax({
-        url: 'save.php',
-        type: 'post',
-        data: {
-            _db: ,
-            _drinkname: $("#drname").val(),
-            _drink1: $("#slider1").val(),
-            _drink2: $("#slider2").val(),
-            _drink3: $("#slider3").val(),
-            _drink4: $("#slider4").val()
         }
     });
 }
