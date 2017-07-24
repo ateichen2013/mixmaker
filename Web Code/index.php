@@ -185,15 +185,15 @@ include("save.php");
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-sm-2 text-center">
-							<button type="button" class="btn btn-primary" onclick="SaveDrinkSlider()">Save</button>
+						<div class="col-sm-3 col-sm-offset-3 text-center">
+							<button type="button" class="btn btn-primary" id="Randomize">Save</button>
 						</div>
-                        <div class="col-sm-2 text-center">
+                        <div class="col-sm-3 text-center">
 							<button type="button" class="btn btn-primary" onclick="RandomizeSliders()">Randomize</button>
 						</div>
 					</div>
                     <div class="row">
-						<div class="col-sm-4 col-sm-offset-3 text-center">
+						<div class="col-sm-6 col-sm-offset-3 text-center">
 							<button type="button" class="btn btn-primary" onclick="MakeDrinkSlider()">Make Drink</button>
 						</div>
 					</div>

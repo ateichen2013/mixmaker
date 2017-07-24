@@ -40,4 +40,14 @@ $(window).load(function(){
             }
         });
     });
+    
+    $("#Randomize").click(function(){
+        n1 = Math.floor(Math.random() * 100);
+        n2 = Math.floor(Math.random() * 100);
+        n3 = Math.floor(Math.random() * 100);
+        console.log(n1);
+        console.log(n2);
+        console.log(n3);
+        $("#slider1").val(50).slider("refresh");
+    });
 });
