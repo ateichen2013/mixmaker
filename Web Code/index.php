@@ -186,7 +186,7 @@ include("save.php");
 					</div>
 					<div class="row">
 						<div class="col-sm-3 col-sm-offset-3 text-center">
-							<button type="button" class="btn btn-primary" onclick="SaveDrinkSlider()">Save</button>
+							<button type="button" class="btn btn-primary" onclick="MakeDrinkSlider()">Save</button>
 						</div>
                         <div class="col-sm-3 text-center">
 							<button type="button" class="btn btn-primary" id="Randomize">Randomize</button>
@@ -194,7 +194,7 @@ include("save.php");
 					</div>
                     <div class="row">
 						<div class="col-sm-6 col-sm-offset-3 text-center">
-							<button type="button" class="btn btn-primary" onclick="MakeDrinkSlider()">Make Drink</button>
+							<button type="button" class="btn btn-primary" onclick="SaveDrinkSlider()">Make Drink</button>
 						</div>
 					</div>
 				</div>
