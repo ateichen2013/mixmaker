@@ -1,17 +1,12 @@
 $(window).load(function() {
 	sliders = $("#sliders .slider");
 
-	$(".slider").on("slidestop", function(event, ui) {
+	$(".slider").on("change", function(event, ui) {
 		var total = 0;
 		sliders.not(this).each(function() {
 			total += parseInt($(this).val());
 		});
-		console.log($(this).val());
-		console.log("Total:");
-		console.log(total);
 		if (total + parseInt($(this).val()) > 100) {
-			console.log("Too high!:");
-			console.log(total + parseInt($(this).val()));
 			$(this).val(100 - total).slider("refresh");
 		}
 	});
