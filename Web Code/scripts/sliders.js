@@ -45,9 +45,9 @@ $(window).load(function(){
         n1 = Math.floor(Math.random() * 100);
         n2 = Math.floor(Math.random() * 100);
         n3 = Math.floor(Math.random() * 100);
-        console.log(n1);
-        console.log(n2);
-        console.log(n3);
-        $("#slider1").val(50).slider("refresh");
+        $("#slider1").val(n1).slider("refresh");
+        $("#slider2").val(n2 - n1).slider("refresh");
+        $("#slider3").val(n3 - n2).slider("refresh");
+        $("#slider4").val(100 - n3).slider("refresh");
     });
 });

@@ -1,5 +1,5 @@
 <?php
-include("db_connect.php");
+#include("db_connect.php");
 include("functions.php");
 include("save.php");
 ?>
@@ -186,7 +186,7 @@ include("save.php");
 					</div>
 					<div class="row">
 						<div class="col-sm-3 col-sm-offset-3 text-center">
-							<button type="button" class="btn btn-primary" onclick="MakeDrinkSlider()">Save</button>
+							<button type="button" class="btn btn-primary" onclick="SaveDrinkSlider()">Save</button>
 						</div>
                         <div class="col-sm-3 text-center">
 							<button type="button" class="btn btn-primary" id="Randomize">Randomize</button>
@@ -194,7 +194,7 @@ include("save.php");
 					</div>
                     <div class="row">
 						<div class="col-sm-6 col-sm-offset-3 text-center">
-							<button type="button" class="btn btn-primary" onclick="SaveDrinkSlider()">Make Drink</button>
+							<button type="button" class="btn btn-primary" onclick="MakeDrinkSlider()">Make Drink</button>
 						</div>
 					</div>
 				</div>
@@ -210,7 +210,7 @@ include("save.php");
 		<section id="portfolio" style="background-color:powderblue;">
 			<div class="container">
 				<div class="row">
-                    <?php echo getDrinks($db); ?>
+                    <?php #echo getDrinks($db); ?>
 					<div data-role="main" class="ui-content">
 						<a href="#pageHome" class=" ui-icon-arrow-l ui-btn-icon-left"></a>
 					</div>
@@ -480,7 +480,7 @@ include("save.php");
 		</div>
 	</div>
     <!-- Saved Modals -->
-    <?php echo getDrinkModals($db); ?>
+    <?php #echo getDrinkModals($db); ?>
 	<!-- Scripts -->
 	<script src="scripts/jquery-1.12.4.js"></script>
 	<script src="scripts/jquery-ui.js"></script>
