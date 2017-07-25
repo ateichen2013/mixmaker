@@ -22,7 +22,7 @@
 }
 
 .box:after {
-  background: linear-gradient(to right, #ffcd02 33%, #e84f47 33%, #e84f47 66%, #65c1ac 66%);
+  background: linear-gradient(to right, #F3FF0F 33%, #FF1B12 33%, #FF1B12 66%, #0FA7FB 66%);
   position: absolute;
   content: '';
   height: 15px;

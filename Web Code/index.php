@@ -188,15 +188,15 @@
 				</div>
 				<div class="row">
 					<div class="col-sm-3 col-sm-offset-3 text-center">
-						<button type="button" class="btn btn-primary" onclick="SaveDrinkSlider()">Save</button>
+						<button type="button" class="btn btn-primary" onclick="SaveDrinkSlider()" data-theme="e">Save</button>
 					</div>
 					<div class="col-sm-3 text-center">
-						<button type="button" class="btn btn-primary" id="Randomize">Randomize</button>
+						<button type="button" class="btn btn-primary" id="Randomize" data-theme="e">Randomize</button>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-sm-6 col-sm-offset-3 text-center">
-						<button type="button" class="btn btn-primary" id="MakeDrinkSlider">Make Drink</button>
+						<button type="button" class="btn btn-primary" id="MakeDrinkSlider" data-theme="f">Make Drink</button>
 					</div>
 				</div>
 			</div>
@@ -485,18 +485,13 @@
 	<?php #echo getDrinkModals($db); ?>
 	<!-- Scripts -->
 	<script src="scripts/jquery-1.12.4.js"></script>
-	<script src="scripts/jquery-ui.js"></script>
 	<script src="scripts/jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>
 	<!-- Bootstrap Core JavaScript -->
 	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 	<!-- Custom Scripts -->
 	<script src="scripts/functions.js"></script>
-	<script type="text/javascript" src="scripts/makedrink.js"></script>
 	<!-- Plugin JavaScript -->
-	<script src="scripts/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
-	<!-- Contact Form JavaScript -->
-	<script src="scripts/jqBootstrapValidation.js"></script>-->
-	<script src="scripts/contact_me.js"></script>-->
+	<script src="scripts/jquery.easing.min.js" crossorigin="anonymous"></script>
 	<!-- Theme JavaScript -->
 	<script src="scripts/agency.js"></script>
 </body>
