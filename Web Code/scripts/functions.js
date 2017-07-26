@@ -59,21 +59,19 @@ $( document ).ready(function() {
 	});
     
     $('#save').click(function() {
+        name = prompt("Please enter a drink name:")
+        
         $.ajax({
             url: 'http://10.10.0.1/save.php',
             type:'POST',
             data:
             {
-                drinkname: "test",
+                drinkname: name,
                 drink1: $("#slider1").val(),
 				drink2: $("#slider2").val(),
 				drink3: $("#slider3").val(),
 				drink4: $("#slider4").val()
             },
-            success: function(msg)
-            {
-                alert('post request sent Sent');
-            }               
         });
     });
 });
