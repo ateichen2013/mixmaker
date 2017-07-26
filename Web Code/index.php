@@ -189,7 +189,7 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-3 col-sm-offset-3 text-center">
-                            <button type="submit" class="btn btn-primary" data-theme="e">Save</button>
+                            <button type="button" class="btn btn-primary" id="save" data-theme="e">Save</button>
                         </div>
                         <div class="col-sm-3 text-center">
                             <button type="button" class="btn btn-primary" id="Randomize" data-theme="e">Randomize</button>

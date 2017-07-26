@@ -57,6 +57,25 @@ $( document ).ready(function() {
 			}
 		});
 	});
+    
+    $('#save').click(function() {
+        $.ajax({
+            url: save.php,
+            type:'POST',
+            data:
+            {
+                drinkname: test,
+                drink1: $("#slider1").val(),
+				drink2: $("#slider2").val(),
+				drink3: $("#slider3").val(),
+				drink4: $("#slider4").val()
+            },
+            success: function(msg)
+            {
+                alert('post request sent Sent');
+            }               
+        });
+    });
 });
 
 function MakeDrink(dr1, dr2, dr3, dr4) {
@@ -83,8 +102,4 @@ function MakeDrink(dr1, dr2, dr3, dr4) {
 			}
 		}
 	});
-}
-
-function SaveDrinkSlider() {
-	console.log("saved");
 }

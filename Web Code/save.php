@@ -1,14 +1,15 @@
 <?php
-function SaveDrinkToDB($_db, $_drinkname, $_drink1, $_drink2, $_drink3, $_drink4)
-{
+include("db_connect.php");
+
+if (isset($_REQUEST['drinkname'])) {
 	/* Prepared statement, stage 1: prepare query */
-	if (!($stmt = $_db->prepare("INSERT INTO drinks(drinkname, drink1, drink2, drink3, drink4) VALUES (?, ?, ?, ?, ?, ?)")))
+	if (!($stmt = $db->prepare("INSERT INTO drinks(drinkname, drink1, drink2, drink3, drink4) VALUES (?, ?, ?, ?, ?, ?)")))
 	{
-		echo "Prepare failed: (" . $_db->errno . ") " . $_db->error;
+		echo "Prepare failed: (" . $db->errno . ") " . $db->error;
 	}
 
 	/* Prepared statement, stage 2: bind parameters*/
-	if (!$stmt->bind_param('sssss', $_drinkname, $_drink1, $_drink2, $_drink3, $_drink4))
+	if (!$stmt->bind_param('sssss', $_POST["drinkname"], $_POST["drink1"], $_POST["drink2"], $_POST["drink3"], $_POST["drink4"]))
 	{
 		echo "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error;
 	}
