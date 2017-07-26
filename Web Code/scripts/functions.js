@@ -64,7 +64,7 @@ $( document ).ready(function() {
             type:'POST',
             data:
             {
-                drinkname: test,
+                drinkname: "test",
                 drink1: $("#slider1").val(),
 				drink2: $("#slider2").val(),
 				drink3: $("#slider3").val(),
