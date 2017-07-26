@@ -8,7 +8,6 @@ window.onload = function () {
 			showInLegend: false,
 			toolTipContent: "#percent %",
 //			yValueFormatString: "#0.#",
-			legendText: "{indexLabel}",
 			dataPoints: [
 				{  y: 30, indexLabel: "apple" },
 				{  y: 30, indexLabel: "Fruitpunch" },
