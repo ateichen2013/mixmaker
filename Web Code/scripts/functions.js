@@ -1,7 +1,9 @@
 $(window).load(function() {
-	sliders = $("#sliders .slider");
+    console.log("loaded");
+    sliders = $("#sliders .slider");
 
 	$(".slider").on("change", function(event, ui) {
+        console.log("moved");
 		var total = 0;
 		sliders.not(this).each(function() {
 			total += parseInt($(this).val());
@@ -10,7 +12,9 @@ $(window).load(function() {
 			$(this).val(100 - total).slider("refresh");
 		}
 	});
+});
 
+$( document ).ready(function() {
 	$("#Randomize").click(function() {
 		n1 = 0;
 		n2 = 0;

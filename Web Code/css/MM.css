@@ -35,3 +35,19 @@
     line-height: 24px;
     margin-top: 10px;
 }
+
+#sliders > div:nth-child(2) > div.col-sm-6.div-slider > div > div > div {
+    background-color: #feb36d;
+}
+
+#sliders > div:nth-child(3) > div.col-sm-6.div-slider > div > div > div {
+    background-color: #f68987;
+}
+
+#sliders > div:nth-child(4) > div.col-sm-6.div-slider > div > div > div {
+    background-color: #b69cdd;
+}
+
+#sliders > div:nth-child(5) > div.col-sm-6.div-slider > div > div > div {
+    background-color: #fefe00;
+}
