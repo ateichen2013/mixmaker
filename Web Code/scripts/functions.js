@@ -60,7 +60,7 @@ $( document ).ready(function() {
     
     $('#save').click(function() {
         $.ajax({
-            url: save.php,
+            url: 'save.php',
             type:'POST',
             data:
             {
