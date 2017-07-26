@@ -496,6 +496,9 @@
 	<script src="scripts/jquery.easing.min.js" crossorigin="anonymous"></script>
 	<!-- Theme JavaScript -->
 	<script src="scripts/agency.js"></script>
+    <!-- Pie Chart JavaScript -->
+    <script src="scripts/piechart.js"></script>
+    <script src="scripts/canvasjs-1.9.9/canvasjs.min.js"></script>
 </body>
 
 </html>

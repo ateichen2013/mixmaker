@@ -1,20 +1,22 @@
 window.onload = function () {
 	var chart = new CanvasJS.Chart("chartContainer",
 	{
+		theme: "theme2",
 		title:{
-			text: "Pie Chart"
+			text: "Mixmaker Drink Percentages"
 		},
 		data: [
 		{
 			type: "pie",
+			showInLegend: true,
+			toolTipContent: "#percent %",
+//			yValueFormatString: "#0.#",
+			legendText: "{indexLabel}",
 			dataPoints: [
-				{ y: 4181563},
-				{ y: 2175498},
-				{ y: 3125844},
-				{ y: 1176121},
-				{ y: 1727161},
-				{ y: 4303364},
-				{ y: 1717786}
+				{  y: 30, indexLabel: "apple" },
+				{  y: 30, indexLabel: "Fruitpunch" },
+				{  y: 30, indexLabel: "Grape" },
+				{  y: 0, indexLabel: "Lemonade"},
 			]
 		}
 		]
