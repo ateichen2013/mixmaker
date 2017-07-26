@@ -9,10 +9,10 @@ window.onload = function () {
 			toolTipContent: "#percent %",
 //			yValueFormatString: "#0.#",
 			dataPoints: [
-				{  y: 30, indexLabel: "apple" },
-				{  y: 30, indexLabel: "Fruitpunch" },
-				{  y: 30, indexLabel: "Grape" },
-				{  y: 0, indexLabel: "Lemonade"},
+				{  y: 30 },
+				{  y: 30 },
+				{  y: 30 },
+				{  y: 0 },
 			]
 		}
 		]
