@@ -13,7 +13,7 @@ function getDrinks($_db)
     {   
         $output = $output . '<div class="col-md-4 col-sm-6 portfolio-item">
             <a href="#SavedModal' . $row['drinkid'] . '" class="portfolio-link" data-toggle="modal">
-            <img src="img/Preset_Logo_1.png" class="img-responsive" alt="">
+            	<div id="chartContainer" style="height: 400px; width: 100%;"></div>
             </a>
             <div class="portfolio-caption">
                 <h4>' . $row['drinkname'] . '</h4>
@@ -54,7 +54,7 @@ function getDrinkModals($_db)
 									<h2>' . $row['drinkname'] . '</h2>
 								</div>
 								<div class="row">
-									<img class="img-centered" height="250" src="img/Preset_Logo_1.png" alt="">
+										<div id="chartContainer" style="height: 400px; width: 100%;"></div>
 								</div>
 								<!--<a href="#anylink" class="ui-btn">Make Drink</a>-->
 								<!--<a href="#pagetwo" class="ui-btn ui-btn-inline" data-dismiss="modal">Make Drink</a>-->
