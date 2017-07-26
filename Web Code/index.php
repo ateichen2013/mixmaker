@@ -1,5 +1,5 @@
 <?php
-	#include("db_connect.php");
+	include("db_connect.php");
 	include("functions.php");
 	include("save.php");
 ?>
@@ -148,58 +148,60 @@
 		</div>
 
 		<body>
-			<div class="container" id="sliders">
-				<div class="row">
-					<div class="col-sm-6 col-sm-offset-3 text-center">
-						<h1>Custom Drink</h1>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-3 text-right">
-						<h3 class="sliderlabel">Apple</h3>
-					</div>
-					<div class="col-sm-6 div-slider">
-						<input type="range" class="slider" id="slider1" value="0" min="0" max="100" data-highlight="true" data-theme="a" />
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-3 text-right">
-						<h3 class="sliderlabel">Fruit Punch</h3>
-					</div>
-					<div class="col-sm-6 div-slider">
-						<input type="range" class="slider" id="slider2" value="0" min="0" max="100" data-highlight="true" data-theme="b" />
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-3 text-right">
-						<h3 class="sliderlabel">Grape</h3>
-					</div>
-					<div class="col-sm-6 div-slider">
-						<input type="range" class="slider" id="slider3" value="0" min="0" max="100" data-highlight="true" data-theme="c" />
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-3 text-right">
-						<h3 class="sliderlabel">Lemonade</h3>
-					</div>
-					<div class="col-sm-6 div-slider">
-						<input type="range" class="slider" id="slider4" value="0" min="0" max="100" data-highlight="true" data-theme="d" />
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-3 col-sm-offset-3 text-center">
-						<button type="button" class="btn btn-primary" onclick="SaveDrinkSlider()" data-theme="e">Save</button>
-					</div>
-					<div class="col-sm-3 text-center">
-						<button type="button" class="btn btn-primary" id="Randomize" data-theme="e">Randomize</button>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-6 col-sm-offset-3 text-center">
-						<button type="button" class="btn btn-primary" id="MakeDrinkSlider" data-theme="f">Make Drink</button>
-					</div>
-				</div>
-			</div>
+            <form method="post" action="save.php">
+                <div class="container" id="sliders">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3 text-center">
+                            <h1>Custom Drink</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3 text-right">
+                            <h3 class="sliderlabel">Apple</h3>
+                        </div>
+                        <div class="col-sm-6 div-slider">
+                            <input type="range" class="slider" id="slider1" value="0" min="0" max="100" data-highlight="true" data-theme="a" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3 text-right">
+                            <h3 class="sliderlabel">Fruit Punch</h3>
+                        </div>
+                        <div class="col-sm-6 div-slider">
+                            <input type="range" class="slider" id="slider2" value="0" min="0" max="100" data-highlight="true" data-theme="b" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3 text-right">
+                            <h3 class="sliderlabel">Grape</h3>
+                        </div>
+                        <div class="col-sm-6 div-slider">
+                            <input type="range" class="slider" id="slider3" value="0" min="0" max="100" data-highlight="true" data-theme="c" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3 text-right">
+                            <h3 class="sliderlabel">Lemonade</h3>
+                        </div>
+                        <div class="col-sm-6 div-slider">
+                            <input type="range" class="slider" id="slider4" value="0" min="0" max="100" data-highlight="true" data-theme="d" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3 col-sm-offset-3 text-center">
+                            <button type="submit" class="btn btn-primary" data-theme="e">Save</button>
+                        </div>
+                        <div class="col-sm-3 text-center">
+                            <button type="button" class="btn btn-primary" id="Randomize" data-theme="e">Randomize</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3 text-center">
+                            <button type="button" class="btn btn-primary" id="MakeDrinkSlider" data-theme="f">Make Drink</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
 		</body>
 	</div>
 	<!-- Saved -->
@@ -212,7 +214,7 @@
 		<section id="portfolio" style="background-color:powderblue;">
 			<div class="container">
 				<div class="row">
-					<?php #echo getDrinks($db); ?>
+					<?php echo getDrinks($db); ?>
 					<div data-role="main" class="ui-content">
 						<a href="#pageHome" class=" ui-icon-arrow-l ui-btn-icon-left"></a>
 					</div>
@@ -482,7 +484,7 @@
 		</div>
 	</div>
 	<!-- Saved Modals -->
-	<?php #echo getDrinkModals($db); ?>
+	<?php echo getDrinkModals($db); ?>
 	<!-- Scripts -->
 	<script src="scripts/jquery-1.12.4.js"></script>
 	<script src="scripts/jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>
