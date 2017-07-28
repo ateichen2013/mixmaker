@@ -36,7 +36,7 @@
 			<div class="box">
 			</div>
 		</header>
-		<section id="portfolio" style="background-color:powderblue;">
+		<section id="portfolio" style='background-image: url("img/Background.png");' align="center">
 			<div class="container" data-role="controlgroup">
 				<div class="row">
 					<div class="col-md-4 col-sm-6 portfolio-item">
