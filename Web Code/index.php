@@ -254,14 +254,15 @@
 										Have a taste of the rainbow with this great, highly mixed drink and enjoy a huge variety of flavor that will make your taste buds go wild.
 									</p>
 								</div>
-								<!--<a href="#anylink" class="ui-btn">Make Drink</a>-->
-								<!--<a href="#pagetwo" class="ui-btn ui-btn-inline" data-dismiss="modal">Make Drink</a>-->
 								<div class="row">
-									<button type="button" class="btn btn-primary" onclick="MakeDrink(25, 25, 25, 25)">Make Drink</button>
+                                    <div class="col-sm-6 col-sm-offset-3 text-center">
+                                        <button type="button" class="btn btn-primary" onclick="MakeDrink(25, 25, 25, 25)" data-theme="f">Make Drink</button>
+                                    </div>
 								</div>
-								<br>
 								<div class="row">
-									<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Back</button>
+                                    <div class="col-sm-6 col-sm-offset-3 text-center">
+									   <button type="button" class="btn btn-primary" data-dismiss="modal" data-theme="e"><i class="fa fa-times"></i> Back</button>
+                                    </div>
 								</div>
 							</div>
 						</div>
