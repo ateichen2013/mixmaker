@@ -13,7 +13,7 @@ function getDrinks($_db)
     {   
         $output = $output . '<div class="col-md-4 col-sm-6 portfolio-item">
             <a href="#SavedModal' . $row['drinkid'] . '" class="portfolio-link" data-toggle="modal">
-            	<img class="img-responsive" src="img/Mix_Maker_Main_Logo.png" alt="">
+            	<img class="img-responsive" src="img/Mix_Maker_Main_Logo.png" height="217.58" alt="">
             </a>
             <div class="portfolio-caption">
                 <h4>' . $row['drinkname'] . '</h4>
