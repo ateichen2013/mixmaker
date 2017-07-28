@@ -227,7 +227,6 @@
 	</div>
 	<!-- Preset Modals -->
 	<!-- Preset Modal 1 -->
-    <button class="btn btn-primary" onclick="MakeDrink(25, 25, 25, 25)" data-theme="f">Make Drink</button>
 	<div class="portfolio-modal modal" id="PresetModal1" tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -258,12 +257,12 @@
 								</div>
 								<div class="row">
                                     <div class="col-sm-6 col-sm-offset-3 text-center">
-                                        <button class="btn btn-primary" onclick="MakeDrink(25, 25, 25, 25)" data-theme="f">Make Drink</button>
+                                        <button class="btn btn-primary ui-btn ui-btn-f ui-shadow ui-corner-all" onclick="MakeDrink(25, 25, 25, 25)" data-theme="f">Make Drink</button>
                                     </div>
 								</div>
 								<div class="row">
                                     <div class="col-sm-6 col-sm-offset-3 text-center">
-									   <button class="btn btn-primary" data-dismiss="modal" data-theme="e"><i class="fa fa-times"></i> Back</button>
+									   <button class="btn btn-primary ui-btn ui-btn-e ui-shadow ui-corner-all" data-dismiss="modal" data-theme="e"><i class="fa fa-times"></i> Back</button>
                                     </div>
 								</div>
 							</div>
@@ -302,12 +301,15 @@
 										Enjoy this lemon packed drink with a zest of punch and a tangy grape flavor the whole family will love on a hot day.
 									</p>
 								</div>
-								<div class="row">
-									<button type="button" class="btn btn-primary" onclick="MakeDrink(0, 35, 20, 45)">Make Drink</button>
+                                <div class="row">
+                                    <div class="col-sm-6 col-sm-offset-3 text-center">
+                                        <button class="btn btn-primary ui-btn ui-btn-f ui-shadow ui-corner-all" onclick="MakeDrink(0, 35, 20, 45)" data-theme="f">Make Drink</button>
+                                    </div>
 								</div>
-								<br>
 								<div class="row">
-									<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Back</button>
+                                    <div class="col-sm-6 col-sm-offset-3 text-center">
+									   <button class="btn btn-primary ui-btn ui-btn-e ui-shadow ui-corner-all" data-dismiss="modal" data-theme="e"><i class="fa fa-times"></i> Back</button>
+                                    </div>
 								</div>
 							</div>
 						</div>
@@ -345,12 +347,15 @@
 										Go crazy for this drink with the best grape flavor you have ever tasted and still get a little bit of the other flavors for some extra kick.
 									</p>
 								</div>
-								<div class="row">
-									<button type="button" class="btn btn-primary" onclick="MakeDrink(10, 10, 75, 5)">Make Drink</button>
+                                <div class="row">
+                                    <div class="col-sm-6 col-sm-offset-3 text-center">
+                                        <button class="btn btn-primary ui-btn ui-btn-f ui-shadow ui-corner-all" onclick="MakeDrink(10, 10, 75, 5)" data-theme="f">Make Drink</button>
+                                    </div>
 								</div>
-								<br>
 								<div class="row">
-									<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Back</button>
+                                    <div class="col-sm-6 col-sm-offset-3 text-center">
+									   <button class="btn btn-primary ui-btn ui-btn-e ui-shadow ui-corner-all" data-dismiss="modal" data-theme="e"><i class="fa fa-times"></i> Back</button>
+                                    </div>
 								</div>
 							</div>
 						</div>
@@ -388,12 +393,15 @@
 										Make this drink your new favorite fruity blend of punch and apple taste without having anything too sour.
 									</p>
 								</div>
-								<div class="row">
-									<button type="button" class="btn btn-primary" onclick="MakeDrink(50, 50, 0, 0)">Make Drink</button>
+                                <div class="row">
+                                    <div class="col-sm-6 col-sm-offset-3 text-center">
+                                        <button class="btn btn-primary ui-btn ui-btn-f ui-shadow ui-corner-all" onclick="MakeDrink(50, 50, 0, 0)" data-theme="f">Make Drink</button>
+                                    </div>
 								</div>
-								<br>
 								<div class="row">
-									<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Back</button>
+                                    <div class="col-sm-6 col-sm-offset-3 text-center">
+									   <button class="btn btn-primary ui-btn ui-btn-e ui-shadow ui-corner-all" data-dismiss="modal" data-theme="e"><i class="fa fa-times"></i> Back</button>
+                                    </div>
 								</div>
 							</div>
 						</div>
@@ -431,12 +439,15 @@
 										Grab a cup of this amazing, flavorful drink that has everything except for that apple taste.
 									</p>
 								</div>
-								<div class="row">
-									<button type="button" class="btn btn-primary" onclick="MakeDrink(0, 45, 35, 20)">Make Drink</button>
+                                <div class="row">
+                                    <div class="col-sm-6 col-sm-offset-3 text-center">
+                                        <button class="btn btn-primary ui-btn ui-btn-f ui-shadow ui-corner-all" onclick="MakeDrink(0, 45, 35, 20)" data-theme="f">Make Drink</button>
+                                    </div>
 								</div>
-								<br>
 								<div class="row">
-									<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Back</button>
+                                    <div class="col-sm-6 col-sm-offset-3 text-center">
+									   <button class="btn btn-primary ui-btn ui-btn-e ui-shadow ui-corner-all" data-dismiss="modal" data-theme="e"><i class="fa fa-times"></i> Back</button>
+                                    </div>
 								</div>
 							</div>
 						</div>
@@ -474,12 +485,15 @@
 										This drink is a classic favorite if you love fruit punch with a little bit of that apple and grape taste that everyone loves.
 									</p>
 								</div>
-								<div class="row">
-									<button type="button" class="btn btn-primary" onclick="MakeDrink(20, 60, 20, 0)">Make Drink</button>
+                                <div class="row">
+                                    <div class="col-sm-6 col-sm-offset-3 text-center">
+                                        <button class="btn btn-primary ui-btn ui-btn-f ui-shadow ui-corner-all" onclick="MakeDrink(20, 60, 20, 0)" data-theme="f">Make Drink</button>
+                                    </div>
 								</div>
-								<br>
 								<div class="row">
-									<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Back</button>
+                                    <div class="col-sm-6 col-sm-offset-3 text-center">
+									   <button class="btn btn-primary ui-btn ui-btn-e ui-shadow ui-corner-all" data-dismiss="modal" data-theme="e"><i class="fa fa-times"></i> Back</button>
+                                    </div>
 								</div>
 							</div>
 						</div>
