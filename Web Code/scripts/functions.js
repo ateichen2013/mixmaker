@@ -34,6 +34,7 @@ $( document ).ready(function() {
 
 	$("#MakeDrinkSlider").click(function() {
 		console.log("submitted");
+        document.getElementById('audio').play();
 		$.ajax({
 			url: 'http://10.10.0.29:80/makedrink',
 			type: 'post',
@@ -95,6 +96,7 @@ $( document ).ready(function() {
 
 function MakeDrink(dr1, dr2, dr3, dr4) {
 	console.log("submitted");
+    document.getElementById('audio').play();
 	$.ajax({
 		url: 'http://10.10.0.29:80/makedrink',
 		type: 'post',

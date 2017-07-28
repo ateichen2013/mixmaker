@@ -199,6 +199,7 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-6 col-sm-offset-3 text-center">
+                            <audio id="audio" src="sounds/Bubbles_Sound_Effect.mp3" autostart="false" ></audio>
                             <button type="button" class="btn btn-primary" id="MakeDrinkSlider" data-theme="f">Make Drink</button>
                         </div>
                     </div>
