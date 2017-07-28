@@ -95,7 +95,28 @@ $( document ).ready(function() {
 		$("#slider3").val(0).slider("refresh");
 		$("#slider4").val(0).slider("refresh");
     });
+    
+    $('.reset').click(function() {
+        $("#slider1").val(0).slider("refresh");
+		$("#slider2").val(0).slider("refresh");
+		$("#slider3").val(0).slider("refresh");
+		$("#slider4").val(0).slider("refresh");
+    });
 });
+
+function DeleteDrink(name) {
+    $.ajax({
+        url: 'http://10.10.0.1/delete.php',
+        type:'POST',
+        data:
+        {
+            drinkname: name
+        },
+        success:function(data) {
+          alert("Drink Saved"); 
+        }
+    });
+}
 
 function MakeDrink(dr1, dr2, dr3, dr4) {
 	console.log("submitted");

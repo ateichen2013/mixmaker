@@ -63,6 +63,11 @@ function getDrinkModals($_db)
                                         <button class="btn btn-primary ui-btn ui-btn-f ui-shadow ui-corner-all" onclick="MakeDrink(' . $row['drink1'] . ',' . $row['drink2'] . ',' . $row['drink3'] . ',' . $row['drink4'] . ')" data-theme="f">Make Drink</button>
                                     </div>
 								</div>
+                                <div class="row">
+                                    <div class="col-sm-6 col-sm-offset-3 text-center">
+                                        <button class="btn btn-primary ui-btn ui-btn-f ui-shadow ui-corner-all" onclick="DeleteDrink(' . $row['drinkname'] . ')" data-theme="f">Delete</button>
+                                    </div>
+								</div>
 								<div class="row">
                                     <div class="col-sm-6 col-sm-offset-3 text-center">
 									   <button class="btn btn-primary ui-btn ui-btn-e ui-shadow ui-corner-all" data-dismiss="modal" data-theme="e"><i class="fa fa-times"></i> Back</button>
