@@ -60,6 +60,7 @@ $( document ).ready(function() {
     
     $('#save').click(function() {
         name = prompt("Please enter a drink name:");
+        console.log(name);
         
         if(name != null && name != "") {
             $.ajax({
@@ -74,6 +75,9 @@ $( document ).ready(function() {
                     drink4: $("#slider4").val()
                 },
             });
+        }
+        else {
+            console.log("no name entered");
         }
     });
 });
