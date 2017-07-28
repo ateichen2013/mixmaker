@@ -80,6 +80,13 @@ $( document ).ready(function() {
             });
         }
     });
+    
+    $('#reset').click(function() {
+        $("#slider1").val(0).slider("refresh");
+		$("#slider2").val(0).slider("refresh");
+		$("#slider3").val(0).slider("refresh");
+		$("#slider4").val(0).slider("refresh");
+    });
 });
 
 function MakeDrink(dr1, dr2, dr3, dr4) {

@@ -5,7 +5,6 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="utf-8">
 	<!--Adjusting the page on mobile screen  -->
@@ -193,6 +192,9 @@
                         </div>
                         <div class="col-sm-3 text-center">
                             <button type="button" class="btn btn-primary" id="Randomize" data-theme="e">Randomize</button>
+                        </div>
+                        <div class="col-sm-2 text-center">
+                            <button type="button" class="btn btn-primary" id="reset" data-theme="e">Reset</button>
                         </div>
                     </div>
                     <div class="row">
