@@ -187,10 +187,10 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-3 col-sm-offset-3 text-center">
+                        <div class="col-sm-2 col-sm-offset-3 text-center">
                             <button type="button" class="btn btn-primary" id="save" data-theme="e">Save</button>
                         </div>
-                        <div class="col-sm-3 text-center">
+                        <div class="col-sm-2 text-center">
                             <button type="button" class="btn btn-primary" id="Randomize" data-theme="e">Randomize</button>
                         </div>
                         <div class="col-sm-2 text-center">
