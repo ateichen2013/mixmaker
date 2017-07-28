@@ -59,13 +59,14 @@ $( document ).ready(function() {
 	});
     
     $('#save').click(function() {
-        name = prompt("Please enter a drink name:");
-        console.log(name);
+        var name = prompt("Please enter a drink name:");
         
-        if(name === null || name == "") {
-            console.log("no name entered");
-        }
-        else {
+        if (newVal === "") {
+            // user pressed OK, but the input field was empty
+            console.log("User pressed OK with empty field");
+        } else if (newVal) {
+            // user typed something and hit OK
+            console.log("User entered text and hit OK");
             $.ajax({
                 url: 'http://10.10.0.1/save.php',
                 type:'POST',
@@ -78,6 +79,9 @@ $( document ).ready(function() {
                     drink4: $("#slider4").val()
                 },
             });
+        } else {
+            // user hit cancel
+            console.log("User hit cancel")
         }
     });
     
