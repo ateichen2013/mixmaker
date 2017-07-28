@@ -61,10 +61,10 @@ $( document ).ready(function() {
     $('#save').click(function() {
         var name = prompt("Please enter a drink name:");
         
-        if (newVal === "") {
+        if (name === "") {
             // user pressed OK, but the input field was empty
             console.log("User pressed OK with empty field");
-        } else if (newVal) {
+        } else if (name) {
             // user typed something and hit OK
             console.log("User entered text and hit OK");
             $.ajax({
