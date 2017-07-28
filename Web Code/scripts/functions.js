@@ -62,7 +62,7 @@ $( document ).ready(function() {
         name = prompt("Please enter a drink name:");
         console.log(name);
         
-        if(name != null && name != "") {
+        if(name != null) {
             $.ajax({
                 url: 'http://10.10.0.1/save.php',
                 type:'POST',
