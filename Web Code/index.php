@@ -226,6 +226,7 @@
 	</div>
 	<!-- Preset Modals -->
 	<!-- Preset Modal 1 -->
+    <button class="btn btn-primary" onclick="MakeDrink(25, 25, 25, 25)" data-theme="f">Make Drink</button>
 	<div class="portfolio-modal modal" id="PresetModal1" tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -256,12 +257,12 @@
 								</div>
 								<div class="row">
                                     <div class="col-sm-6 col-sm-offset-3 text-center">
-                                        <input type="button" onclick="MakeDrink(25, 25, 25, 25)" data-theme="f">Make Drink</button>
+                                        <button class="btn btn-primary" onclick="MakeDrink(25, 25, 25, 25)" data-theme="f">Make Drink</button>
                                     </div>
 								</div>
 								<div class="row">
                                     <div class="col-sm-6 col-sm-offset-3 text-center">
-									   <input type="button" data-dismiss="modal" data-theme="e"><i class="fa fa-times"></i> Back</button>
+									   <button class="btn btn-primary" data-dismiss="modal" data-theme="e"><i class="fa fa-times"></i> Back</button>
                                     </div>
 								</div>
 							</div>
