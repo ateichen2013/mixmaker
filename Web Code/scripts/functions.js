@@ -105,6 +105,8 @@ $( document ).ready(function() {
 });
 
 function DeleteDrink(name) {
+    console.log("Deleting:")
+    console.log(name)
     $.ajax({
         url: 'http://10.10.0.1/delete.php',
         type:'POST',
