@@ -79,6 +79,9 @@ $( document ).ready(function() {
                     drink3: $("#slider3").val(),
                     drink4: $("#slider4").val()
                 },
+                success:function(data) {
+                  alert("Drink Saved"); 
+                }
             });
         } else {
             // user hit cancel
