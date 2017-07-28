@@ -49,7 +49,7 @@
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6 portfolio-item">
-						<a href="#custom" id="reset" class="portfolio-link">
+						<a href="#custom" class="portfolio-link reset">
 							<img src="img/custome.png" class="img-responsive" alt="">
 							</a>
 						<div class="portfolio-caption">
@@ -194,7 +194,7 @@
                             <button type="button" class="btn btn-primary" id="Randomize" data-theme="e">Randomize</button>
                         </div>
                         <div class="col-sm-2 text-center">
-                            <button type="button" class="btn btn-primary" id="reset" data-theme="e">Reset</button>
+                            <button type="button" class="btn btn-primary reset" data-theme="e">Reset</button>
                         </div>
                     </div>
                     <div class="row">
