@@ -49,7 +49,7 @@
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6 portfolio-item">
-						<a href="#custom" class="portfolio-link">
+						<a href="#custom" id="reset" class="portfolio-link">
 							<img src="img/custome.png" class="img-responsive" alt="">
 							</a>
 						<div class="portfolio-caption">
