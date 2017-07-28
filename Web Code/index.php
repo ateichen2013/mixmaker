@@ -256,12 +256,12 @@
 								</div>
 								<div class="row">
                                     <div class="col-sm-6 col-sm-offset-3 text-center">
-                                        <button type="button" class="btn btn-primary" onclick="MakeDrink(25, 25, 25, 25)" data-theme="f">Make Drink</button>
+                                        <button type="button" class="ui-btn" onclick="MakeDrink(25, 25, 25, 25)" data-theme="f">Make Drink</button>
                                     </div>
 								</div>
 								<div class="row">
                                     <div class="col-sm-6 col-sm-offset-3 text-center">
-									   <button type="button" class="btn btn-primary" data-dismiss="modal" data-theme="e"><i class="fa fa-times"></i> Back</button>
+									   <button type="button" class="ui-btn" data-dismiss="modal" data-theme="e"><i class="fa fa-times"></i> Back</button>
                                     </div>
 								</div>
 							</div>
