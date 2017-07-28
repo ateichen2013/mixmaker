@@ -62,7 +62,7 @@ $( document ).ready(function() {
         name = prompt("Please enter a drink name:");
         console.log(name);
         
-        if(name == null) {
+        if(name === null || name == "") {
             console.log("no name entered");
         }
         else {
