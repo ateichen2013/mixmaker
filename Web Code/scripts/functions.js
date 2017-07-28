@@ -104,15 +104,15 @@ $( document ).ready(function() {
     });
 });
 
-function DeleteDrink(name) {
+function DeleteDrink(id) {
     console.log("Deleting:")
-    console.log(name)
+    console.log(id)
     $.ajax({
         url: 'http://10.10.0.1/delete.php',
         type:'POST',
         data:
         {
-            drinkname: name
+            drinkid: id
         },
         success:function(data) {
           alert("Drink Saved"); 
