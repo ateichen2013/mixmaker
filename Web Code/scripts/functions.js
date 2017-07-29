@@ -1,7 +1,8 @@
 $(window).load(function() {
     console.log("loaded");
     
-    $('[type="range"]').slider(); 
+    $('[type="range"]').slider();
+    $('[type="button"]').button();
     
     sliders = $("#sliders .slider");
 	$(".slider").on("change", function(event, ui) {
