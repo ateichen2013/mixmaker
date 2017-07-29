@@ -19,7 +19,7 @@ function getDrinks($_db)
                 <h4>' . $row['drinkname'] . '</h4>
             </div>
         </div>
-';
+        ';
     }
     
     return $output;
