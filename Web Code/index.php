@@ -32,7 +32,7 @@
 	<!-- Home Page -->
 	<div data-role="page" id="pageHome">
 		<header style="background-color:#FFFCBA;">
-			<img src="media/bannermix.png" alt="" align="center">
+			<img src="img/bannermix.png" alt="" align="center">
 			<div class="box">
 			</div>
 		</header>
@@ -73,7 +73,7 @@
 	<!-- Preset -->
 	<div data-role="page" id="preset">
 		<header style="background-color:#FFFCBA;">
-			<img src="media/bannermix.png" alt="" align="center">
+			<img src="img/bannermix.png" alt="" align="center">
 			<div class="box">
 			</div>
 		</header>
@@ -138,7 +138,7 @@
 	<!-- Custom -->
 	<div data-role="page" id="custom">
 		<header style="background-color:#FFFCBA;">
-			<img src="media/bannermix.png" alt="" align="center">
+			<img src="img/bannermix.png" alt="" align="center">
 			<div class="box">
 			</div>
 		</header>
@@ -210,7 +210,7 @@
 	<!-- Saved -->
 	<div data-role="page" id="saved">
 		<header style="background-color:#FFFCBA;">
-			<img src="media/bannermix.png" alt="" align="center">
+			<img src="img/bannermix.png" alt="" align="center">
 			<div class="box">
 			</div>
 		</header>
