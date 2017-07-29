@@ -54,8 +54,37 @@ function getDrinkModals($_db)
 									<h2>' . $row['drinkname'] . '</h2>
 								</div>
 								<div class="row">
-										<img class="img-centered" height="250" src="img/Mix_Maker_Main_Logo.png" alt="">
-								</div>
+                                    <div class="col-sm-3 text-right">
+                                        <h3 class="sliderlabel">Apple</h3>
+                                    </div>
+                                    <div class="col-sm-6 div-slider">
+                                        <input type="range" class="slider" id="slider1" value="' . $row['drink1'] . '" min="0" max="100" data-highlight="true" data-theme="a" data-disabled="true"/>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3 text-right">
+                                        <h3 class="sliderlabel">Fruit Punch</h3>
+                                    </div>
+                                    <div class="col-sm-6 div-slider">
+                                        <input type="range" class="slider" id="slider2" value="' . $row['drink2'] . '" min="0" max="100" data-highlight="true" data-theme="b" data-disabled="true"/>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3 text-right">
+                                        <h3 class="sliderlabel">Grape</h3>
+                                    </div>
+                                    <div class="col-sm-6 div-slider">
+                                        <input type="range" class="slider" id="slider3" value="' . $row['drink3'] . '" min="0" max="100" data-highlight="true" data-theme="c" data-disabled="true"/>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3 text-right">
+                                        <h3 class="sliderlabel">Lemonade</h3>
+                                    </div>
+                                    <div class="col-sm-6 div-slider">
+                                        <input type="range" class="slider" id="slider4" value="' . $row['drink4'] . '" min="0" max="100" data-highlight="true" data-theme="d" data-disabled="true"/>
+                                    </div>
+                                </div>
 								<!--<a href="#anylink" class="ui-btn">Make Drink</a>-->
 								<!--<a href="#pagetwo" class="ui-btn ui-btn-inline" data-dismiss="modal">Make Drink</a>-->
                                 <div class="row">
