@@ -1,7 +1,7 @@
 $(window).load(function() {
     console.log("loaded");
     
-    $('#SavedModal1').enhanceWithin();
+    $('[type="range"]').slider(); 
     
     sliders = $("#sliders .slider");
 	$(".slider").on("change", function(event, ui) {
