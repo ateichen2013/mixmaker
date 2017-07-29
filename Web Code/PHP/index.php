@@ -1,7 +1,7 @@
 <?php
-	include("PHP/db_connect.php");
-	include("PHP/functions.php");
-	include("PHP/save.php");
+	include("db_connect.php");
+	include("functions.php");
+	include("save.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -147,7 +147,7 @@
 		</div>
 
 		<body>
-            <form method="post" action="PHP/save.php">
+            <form method="post" action="save.php">
                 <div class="container" id="sliders">
                     <div class="row">
                         <div class="col-sm-6 col-sm-offset-3 text-center">

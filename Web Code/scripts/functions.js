@@ -71,7 +71,7 @@ $( document ).ready(function() {
             // user typed something and hit OK
             console.log("User entered text and hit OK");
             $.ajax({
-                url: 'http://10.10.0.1/save.php',
+                url: 'http://10.10.0.1/PHP/save.php',
                 type:'POST',
                 data:
                 {
@@ -103,7 +103,7 @@ function DeleteDrink(id) {
     console.log("Deleting:")
     console.log(id)
     $.ajax({
-        url: 'http://10.10.0.1/delete.php',
+        url: 'http://10.10.0.1/PHP/delete.php',
         type:'POST',
         data:
         {
