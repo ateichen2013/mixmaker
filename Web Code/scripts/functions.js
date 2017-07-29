@@ -1,8 +1,7 @@
 $(window).load(function() {
     console.log("loaded");
     
-    $('[type="range"]').slider();
-    $('[type="button"]').button();
+    $('.saveslider').slider();
     
     sliders = $("#sliders .slider");
 	$(".slider").on("change", function(event, ui) {
@@ -90,13 +89,6 @@ $( document ).ready(function() {
             // user hit cancel
             console.log("User hit cancel")
         }
-    });
-    
-    $('.reset').click(function() {
-        $("#slider1").val(0).slider("refresh");
-		$("#slider2").val(0).slider("refresh");
-		$("#slider3").val(0).slider("refresh");
-		$("#slider4").val(0).slider("refresh");
     });
     
     $('.reset').click(function() {

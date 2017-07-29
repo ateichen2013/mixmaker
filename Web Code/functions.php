@@ -58,7 +58,7 @@ function getDrinkModals($_db)
                                         <h3 class="sliderlabel">Apple</h3>
                                     </div>
                                     <div class="col-sm-6 div-slider">
-                                        <input type="range" class="slider" id="slider1" value="' . $row['drink1'] . '" min="0" max="100" data-highlight="true" data-theme="a" data-disabled="false"/>
+                                        <input type="range" class="saveslider" id="slider1" value="' . $row['drink1'] . '" min="0" max="100" data-highlight="true" data-theme="a" data-disabled="false"/>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -66,7 +66,7 @@ function getDrinkModals($_db)
                                         <h3 class="sliderlabel">Fruit Punch</h3>
                                     </div>
                                     <div class="col-sm-6 div-slider">
-                                        <input type="range" class="slider" id="slider2" value="' . $row['drink2'] . '" min="0" max="100" data-highlight="true" data-theme="b" data-disabled="true"/>
+                                        <input type="range" class="saveslider" id="slider2" value="' . $row['drink2'] . '" min="0" max="100" data-highlight="true" data-theme="b" data-disabled="true"/>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -74,7 +74,7 @@ function getDrinkModals($_db)
                                         <h3 class="sliderlabel">Grape</h3>
                                     </div>
                                     <div class="col-sm-6 div-slider">
-                                        <input type="range" class="slider" id="slider3" value="' . $row['drink3'] . '" min="0" max="100" data-highlight="true" data-theme="c" data-disabled="true"/>
+                                        <input type="range" class="saveslider" id="slider3" value="' . $row['drink3'] . '" min="0" max="100" data-highlight="true" data-theme="c" data-disabled="true"/>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -82,7 +82,7 @@ function getDrinkModals($_db)
                                         <h3 class="sliderlabel">Lemonade</h3>
                                     </div>
                                     <div class="col-sm-6 div-slider">
-                                        <input type="range" class="slider" id="slider4" value="' . $row['drink4'] . '" min="0" max="100" data-highlight="true" data-theme="d" data-disabled="true"/>
+                                        <input type="range" class="saveslider" id="slider4" value="' . $row['drink4'] . '" min="0" max="100" data-highlight="true" data-theme="d" data-disabled="true"/>
                                     </div>
                                 </div>
 								<!--<a href="#anylink" class="ui-btn">Make Drink</a>-->
