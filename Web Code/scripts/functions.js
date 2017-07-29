@@ -1,7 +1,9 @@
 $(window).load(function() {
     console.log("loaded");
+    
+    $('#SavedModal1').enhanceWithin();
+    
     sliders = $("#sliders .slider");
-
 	$(".slider").on("change", function(event, ui) {
         console.log("moved");
 		var total = 0;
