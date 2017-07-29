@@ -36,7 +36,8 @@ function getDrinkModals($_db)
     $output = '';
     while($row = $result->fetch_assoc())
     {   
-        $output = $output . '<div class="portfolio-modal modal" id="SavedModal' . $row['drinkid'] . '" tabindex="-1" role="dialog" aria-hidden="true">
+        $output = $output . '<!-- Saved Modal ' . $row['drinkid'] . ' -->
+        <div class="portfolio-modal modal" id="SavedModal' . $row['drinkid'] . '" tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="container">
@@ -79,8 +80,6 @@ function getDrinkModals($_db)
                                         <input type="range" class="saveslider" id="slider4" value="' . $row['drink4'] . '" min="0" max="100" data-highlight="true" data-theme="d" data-disabled="true"/>
                                     </div>
                                 </div>
-								<!--<a href="#anylink" class="ui-btn">Make Drink</a>-->
-								<!--<a href="#pagetwo" class="ui-btn ui-btn-inline" data-dismiss="modal">Make Drink</a>-->
                                 <div class="row">
                                     <div class="col-sm-6 col-sm-offset-3 text-center">
                                         <button class="btn btn-primary ui-btn ui-btn-f ui-shadow ui-corner-all" onclick="MakeDrink(' . $row['drink1'] . ',' . $row['drink2'] . ',' . $row['drink3'] . ',' . $row['drink4'] . ')" data-theme="f">Make Drink</button>
@@ -102,7 +101,8 @@ function getDrinkModals($_db)
 				</div>
 			</div>
 		</div>
-	</div>';
+	</div>
+    ';
     }
     
     return $output;
