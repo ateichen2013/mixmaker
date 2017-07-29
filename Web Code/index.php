@@ -36,7 +36,7 @@
 			<div class="box">
 			</div>
 		</header>
-		<section id="portfolio" align="center">
+		<section id="portfolio" class="home" align="center">
 			<div class="container" data-role="controlgroup">
 				<div class="row">
 					<div class="col-md-4 col-sm-6 portfolio-item">
