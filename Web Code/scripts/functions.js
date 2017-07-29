@@ -1,7 +1,7 @@
 $(window).load(function() {
     console.log("loaded");
     
-    $('.saveslider').enhanceWithin();
+    $('*').enhanceWithin();
     
     sliders = $("#sliders .slider");
 	$(".slider").on("change", function(event, ui) {
