@@ -67,7 +67,7 @@
     background-color: #feb36d;
 }
 
-.row:nth-child(2).div-slider > .ui-slider > ui-slider-track {
+.modal-body > div:nth-child(2) > div.col-sm-6.div-slider > div > div > div {
     background-color: #feb36d;
 }
 
