@@ -191,7 +191,7 @@
                             <button type="button" class="btn btn-primary" id="save" data-theme="e">Save</button>
                         </div>
                         <div class="col-sm-2 text-center">
-                            <button type="button" class="btn btn-primary" id="Randomize" data-theme="e">Randomize</button>
+                            <button type="button" class="btn btn-primary" id="Randomize" data-theme="g">Randomize</button>
                         </div>
                         <div class="col-sm-2 text-center">
                             <button type="button" class="btn btn-primary reset" data-theme="e">Reset</button>
@@ -230,12 +230,6 @@
 	<div class="portfolio-modal modal" id="PresetModal1" tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
-				<div class="close-modal" data-dismiss="modal">
-					<div class="lr">
-						<div class="rl">
-						</div>
-					</div>
-				</div>
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-8 col-lg-offset-2">
@@ -276,12 +270,6 @@
 	<div class="portfolio-modal modal" id="PresetModal2" tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
-				<div class="close-modal" data-dismiss="modal">
-					<div class="lr">
-						<div class="rl">
-						</div>
-					</div>
-				</div>
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-8 col-lg-offset-2">
@@ -322,12 +310,6 @@
 	<div class="portfolio-modal modal" id="PresetModal3" tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
-				<div class="close-modal" data-dismiss="modal">
-					<div class="lr">
-						<div class="rl">
-						</div>
-					</div>
-				</div>
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-8 col-lg-offset-2">
@@ -368,12 +350,6 @@
 	<div class="portfolio-modal modal" id="PresetModal4" tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
-				<div class="close-modal" data-dismiss="modal">
-					<div class="lr">
-						<div class="rl">
-						</div>
-					</div>
-				</div>
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-8 col-lg-offset-2">
@@ -414,12 +390,6 @@
 	<div class="portfolio-modal modal" id="PresetModal5" tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
-				<div class="close-modal" data-dismiss="modal">
-					<div class="lr">
-						<div class="rl">
-						</div>
-					</div>
-				</div>
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-8 col-lg-offset-2">
@@ -460,12 +430,6 @@
 	<div class="portfolio-modal modal" id="PresetModal6" tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
-				<div class="close-modal" data-dismiss="modal">
-					<div class="lr">
-						<div class="rl">
-						</div>
-					</div>
-				</div>
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-8 col-lg-offset-2">
