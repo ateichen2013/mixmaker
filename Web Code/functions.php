@@ -94,7 +94,7 @@ function getDrinkModals($_db)
 								</div>
                                 <div class="row">
                                     <div class="col-sm-6 col-sm-offset-3 text-center">
-                                        <button class="btn btn-primary ui-btn ui-btn-f ui-shadow ui-corner-all" onclick="DeleteDrink(' . $row['drinkid'] . ')" data-theme="f">Delete</button>
+                                        <button class="btn btn-primary ui-btn ui-btn-f ui-shadow ui-corner-all" onclick="DeleteDrink(' . $row['drinkid'] . ')" data-theme="g">Delete</button>
                                     </div>
 								</div>
 								<div class="row">
