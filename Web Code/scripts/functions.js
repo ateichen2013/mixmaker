@@ -115,7 +115,7 @@ function DeleteDrink(id) {
             drinkid: id
         },
         success:function(data) {
-          alert("Drink Saved"); 
+          alert("Drink Deleted"); 
         }
     });
 }
