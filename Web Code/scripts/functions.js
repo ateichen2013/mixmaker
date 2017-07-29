@@ -1,7 +1,7 @@
 $(window).load(function() {
     console.log("loaded");
     
-//    $('.saveslider').slider();
+    $('.saveslider').trigger('create');
     
     sliders = $("#sliders .slider");
 	$(".slider").on("change", function(event, ui) {
