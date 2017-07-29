@@ -18,7 +18,8 @@ function getDrinks($_db)
             <div class="portfolio-caption">
                 <h4>' . $row['drinkname'] . '</h4>
             </div>
-        </div>';
+        </div>
+';
     }
     
     return $output;
@@ -102,7 +103,7 @@ function getDrinkModals($_db)
 			</div>
 		</div>
 	</div>
-    ';
+';
     }
     
     return $output;
