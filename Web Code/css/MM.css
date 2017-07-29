@@ -59,11 +59,8 @@
 }
 
 .vertical-center {
-  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one :-)       */
-
-  display: flex;
-  align-items: center;
+  margin-top: 25%;
+  margin-bottom: 25%;
 }
 
 #sliders > div:nth-child(2) > div.col-sm-6.div-slider > div > div > div {
