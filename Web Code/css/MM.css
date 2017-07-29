@@ -58,8 +58,20 @@
     background-position: center;
 }
 
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
 #sliders > div:nth-child(2) > div.col-sm-6.div-slider > div > div > div {
     background-color: #feb36d;
+}
+
+#SavedModal32 > div > div > div.container > div > div > div > div:nth-child(2) > div.col-sm-6.div-slider > div > div > div {
+    
 }
 
 #sliders > div:nth-child(3) > div.col-sm-6.div-slider > div > div > div {

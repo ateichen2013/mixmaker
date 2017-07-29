@@ -45,7 +45,7 @@ function getDrinkModals($_db)
 						</div>
 					</div>
 				</div>
-				<div class="container">
+				<div class="container vertical-center">
 					<div class="row">
 						<div class="col-lg-8 col-lg-offset-2">
 							<div class="modal-body">
@@ -58,7 +58,7 @@ function getDrinkModals($_db)
                                         <h3 class="sliderlabel">Apple</h3>
                                     </div>
                                     <div class="col-sm-6 div-slider">
-                                        <input type="range" class="saveslider" id="slider1" value="' . $row['drink1'] . '" min="0" max="100" data-highlight="true" data-theme="a" data-disabled="false"/>
+                                        <input type="range" class="saveslider" id="slider1" value="' . $row['drink1'] . '" min="0" max="100" data-highlight="true" data-theme="a" data-disabled="true"/>
                                     </div>
                                 </div>
                                 <div class="row">

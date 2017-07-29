@@ -24,7 +24,7 @@ button,
 .ui-btn {
 	font-size: 1em;
 	line-height: 1.3;
-	   font-family: sans-serif /*{global-font-family}*/;
+	  font-family: sans-serif /*{global-font-family}*/;
 }
 legend,
 .ui-input-text input,
@@ -349,7 +349,7 @@ html .ui-body-a .ui-slider-track .ui-btn-active,
 html body .ui-group-theme-a .ui-slider-track .ui-btn-active,
 html body div.ui-slider-track.ui-body-a .ui-btn-active {
 	background-color: #feb36d /*{a-active-background-color}*/;
-	border-color: #feb36d /*{a-active-border}*/;
+	border-color: #8b623b /*{a-active-border}*/;
 	color: #ffffff /*{a-active-color}*/;
 	text-shadow: 0 /*{a-active-shadow-x}*/ 1px /*{a-active-shadow-y}*/ 0 /*{a-active-shadow-radius}*/ #005599 /*{a-active-shadow-color}*/;
 }
@@ -511,7 +511,7 @@ html .ui-body-b .ui-slider-track .ui-btn-active,
 html body .ui-group-theme-b .ui-slider-track .ui-btn-active,
 html body div.ui-slider-track.ui-body-b .ui-btn-active {
 	background-color: #f68987 /*{b-active-background-color}*/;
-	border-color: #f68987 /*{b-active-border}*/;
+	border-color: #874b4a /*{b-active-border}*/;
 	color: #ffffff /*{b-active-color}*/;
 	text-shadow: 0 /*{b-active-shadow-x}*/ 1px /*{b-active-shadow-y}*/ 0 /*{b-active-shadow-radius}*/ #005599 /*{b-active-shadow-color}*/;
 }
@@ -675,7 +675,7 @@ html .ui-body-c .ui-slider-track .ui-btn-active,
 html body .ui-group-theme-c .ui-slider-track .ui-btn-active,
 html body div.ui-slider-track.ui-body-c .ui-btn-active {
 	background-color: #b69cdd /*{c-active-background-color}*/;
-	border-color: #b69cdd /*{c-active-border}*/;
+	border-color: #645579 /*{c-active-border}*/;
 	color: #ffffff /*{c-active-color}*/;
 	text-shadow: 0 /*{c-active-shadow-x}*/ 1px /*{c-active-shadow-y}*/ 0 /*{c-active-shadow-radius}*/ #005599 /*{c-active-shadow-color}*/;
 }
@@ -839,7 +839,7 @@ html .ui-body-d .ui-slider-track .ui-btn-active,
 html body .ui-group-theme-d .ui-slider-track .ui-btn-active,
 html body div.ui-slider-track.ui-body-d .ui-btn-active {
 	background-color: #fefe00 /*{d-active-background-color}*/;
-	border-color: #fefe00 /*{d-active-border}*/;
+	border-color: #8b8b00 /*{d-active-border}*/;
 	color: #ffffff /*{d-active-color}*/;
 	text-shadow: 0 /*{d-active-shadow-x}*/ 1px /*{d-active-shadow-y}*/ 0 /*{d-active-shadow-radius}*/ #005599 /*{d-active-shadow-color}*/;
 }
@@ -1003,7 +1003,7 @@ html .ui-body-e .ui-slider-track .ui-btn-active,
 html body .ui-group-theme-e .ui-slider-track .ui-btn-active,
 html body div.ui-slider-track.ui-body-e .ui-btn-active {
 	background-color: #13A4F7 /*{e-active-background-color}*/;
-	border-color: #13A4F7 /*{e-active-border}*/;
+	border-color: #0a5a87 /*{e-active-border}*/;
 	color: #ffffff /*{e-active-color}*/;
 	text-shadow: 0 /*{e-active-shadow-x}*/ 1px /*{e-active-shadow-y}*/ 0 /*{e-active-shadow-radius}*/ #13A4F7 /*{e-active-shadow-color}*/;
 }
@@ -1167,7 +1167,7 @@ html .ui-body-f .ui-slider-track .ui-btn-active,
 html body .ui-group-theme-f .ui-slider-track .ui-btn-active,
 html body div.ui-slider-track.ui-body-f .ui-btn-active {
 	background-color: #FF1B12 /*{f-active-background-color}*/;
-	border-color: #FF1B12 /*{f-active-border}*/;
+	border-color: #8c0e09 /*{f-active-border}*/;
 	color: #ffffff /*{f-active-color}*/;
 	text-shadow: 0 /*{f-active-shadow-x}*/ 1px /*{f-active-shadow-y}*/ 0 /*{f-active-shadow-radius}*/ #FF1B12 /*{f-active-shadow-color}*/;
 }
@@ -1195,6 +1195,170 @@ html head + body .ui-body-f.ui-focus {
 	-webkit-box-shadow: 0 0 12px #FF1B12 /*{f-active-background-color}*/;
 	-moz-box-shadow: 0 0 12px #FF1B12 /*{f-active-background-color}*/;
 	box-shadow: 0 0 12px #FF1B12 /*{f-active-background-color}*/;
+}
+
+
+/* G
+-----------------------------------------------------------------------------------------------------------*/
+/* Bar: Toolbars, dividers, slider track */
+.ui-bar-g,
+.ui-page-theme-g .ui-bar-inherit,
+html .ui-bar-g .ui-bar-inherit,
+html .ui-body-g .ui-bar-inherit,
+html body .ui-group-theme-g .ui-bar-inherit {
+	background-color: #e9e9e9 /*{g-bar-background-color}*/;
+	border-color: #dddddd /*{g-bar-border}*/;
+	color: #333333 /*{g-bar-color}*/;
+	text-shadow: 0 /*{g-bar-shadow-x}*/ 1px /*{g-bar-shadow-y}*/ 0 /*{g-bar-shadow-radius}*/ #eeeeee /*{g-bar-shadow-color}*/;
+	font-weight: bold;
+}
+.ui-bar-g {
+	border-width: 1px;
+	border-style: solid;
+}
+/* Page and overlay */
+.ui-overlay-g,
+.ui-page-theme-g,
+.ui-page-theme-g .ui-panel-wrapper {
+	background-color: #f9f9f9 /*{g-page-background-color}*/;
+	border-color: #bbbbbb /*{g-page-border}*/;
+	color: #333333 /*{g-page-color}*/;
+	text-shadow: 0 /*{g-page-shadow-x}*/ 1px /*{g-page-shadow-y}*/ 0 /*{g-page-shadow-radius}*/ #f3f3f3 /*{g-page-shadow-color}*/;
+}
+/* Body: Read-only lists, text inputs, collapsible content */
+.ui-body-g,
+.ui-page-theme-g .ui-body-inherit,
+html .ui-bar-g .ui-body-inherit,
+html .ui-body-g .ui-body-inherit,
+html body .ui-group-theme-g .ui-body-inherit,
+html .ui-panel-page-container-g {
+	background-color: #ffffff /*{g-body-background-color}*/;
+	border-color: #dddddd /*{g-body-border}*/;
+	color: #333333 /*{g-body-color}*/;
+	text-shadow: 0 /*{g-body-shadow-x}*/ 1px /*{g-body-shadow-y}*/ 0 /*{g-body-shadow-radius}*/ #f3f3f3 /*{g-body-shadow-color}*/;
+}
+.ui-body-g {
+	border-width: 1px;
+	border-style: solid;
+}
+/* Links */
+.ui-page-theme-g a,
+html .ui-bar-g a,
+html .ui-body-g a,
+html body .ui-group-theme-g a {
+	color: #f1ff15 /*{g-link-color}*/;
+	font-weight: bold;
+}
+.ui-page-theme-g a:visited,
+html .ui-bar-g a:visited,
+html .ui-body-g a:visited,
+html body .ui-group-theme-g a:visited {
+    color: #3388cc /*{g-link-visited}*/;
+}
+.ui-page-theme-g a:hover,
+html .ui-bar-g a:hover,
+html .ui-body-g a:hover,
+html body .ui-group-theme-g a:hover {
+	color: #005599 /*{g-link-hover}*/;
+}
+.ui-page-theme-g a:active,
+html .ui-bar-g a:active,
+html .ui-body-g a:active,
+html body .ui-group-theme-g a:active {
+	color: #005599 /*{g-link-active}*/;
+}
+/* Button up */
+.ui-page-theme-g .ui-btn,
+html .ui-bar-g .ui-btn,
+html .ui-body-g .ui-btn,
+html body .ui-group-theme-g .ui-btn,
+html head + body .ui-btn.ui-btn-g,
+/* Button visited */
+.ui-page-theme-g .ui-btn:visited,
+html .ui-bar-g .ui-btn:visited,
+html .ui-body-g .ui-btn:visited,
+html body .ui-group-theme-g .ui-btn:visited,
+html head + body .ui-btn.ui-btn-g:visited {
+	background-color: #f5fd7c /*{g-bup-background-color}*/;
+	border-color: #dddddd /*{g-bup-border}*/;
+	color: #333333 /*{g-bup-color}*/;
+	text-shadow: 0 /*{g-bup-shadow-x}*/ 1px /*{g-bup-shadow-y}*/ 0 /*{g-bup-shadow-radius}*/ #f1ff15 /*{g-bup-shadow-color}*/;
+}
+/* Button hover */
+.ui-page-theme-g .ui-btn:hover,
+html .ui-bar-g .ui-btn:hover,
+html .ui-body-g .ui-btn:hover,
+html body .ui-group-theme-g .ui-btn:hover,
+html head + body .ui-btn.ui-btn-g:hover {
+	background-color: #f5fd7c /*{g-bhover-background-color}*/;
+	border-color: #dddddd /*{g-bhover-border}*/;
+	color: #333333 /*{g-bhover-color}*/;
+	text-shadow: 0 /*{g-bhover-shadow-x}*/ 1px /*{g-bhover-shadow-y}*/ 0 /*{g-bhover-shadow-radius}*/ #f1ff15 /*{g-bhover-shadow-color}*/;
+}
+/* Button down */
+.ui-page-theme-g .ui-btn:active,
+html .ui-bar-g .ui-btn:active,
+html .ui-body-g .ui-btn:active,
+html body .ui-group-theme-g .ui-btn:active,
+html head + body .ui-btn.ui-btn-g:active {
+	background-color: #f1ff15 /*{g-bdown-background-color}*/;
+	border-color: #dddddd /*{g-bdown-border}*/;
+	color: #333333 /*{g-bdown-color}*/;
+	text-shadow: 0 /*{g-bdown-shadow-x}*/ 1px /*{g-bdown-shadow-y}*/ 0 /*{g-bdown-shadow-radius}*/ #f1ff15 /*{g-bdown-shadow-color}*/;
+}
+/* Active button */
+.ui-page-theme-g .ui-btn.ui-btn-active,
+html .ui-bar-g .ui-btn.ui-btn-active,
+html .ui-body-g .ui-btn.ui-btn-active,
+html body .ui-group-theme-g .ui-btn.ui-btn-active,
+html head + body .ui-btn.ui-btn-g.ui-btn-active,
+/* Active checkbox icon */
+.ui-page-theme-g .ui-checkbox-on:after,
+html .ui-bar-g .ui-checkbox-on:after,
+html .ui-body-g .ui-checkbox-on:after,
+html body .ui-group-theme-g .ui-checkbox-on:after,
+.ui-btn.ui-checkbox-on.ui-btn-g:after,
+/* Active flipswitch background */
+.ui-page-theme-g .ui-flipswitch-active,
+html .ui-bar-g .ui-flipswitch-active,
+html .ui-body-g .ui-flipswitch-active,
+html body .ui-group-theme-g .ui-flipswitch-active,
+html body .ui-flipswitch.ui-bar-g.ui-flipswitch-active,
+/* Active slider track */
+.ui-page-theme-g .ui-slider-track .ui-btn-active,
+html .ui-bar-g .ui-slider-track .ui-btn-active,
+html .ui-body-g .ui-slider-track .ui-btn-active,
+html body .ui-group-theme-g .ui-slider-track .ui-btn-active,
+html body div.ui-slider-track.ui-body-g .ui-btn-active {
+	background-color: #f1ff15 /*{g-active-background-color}*/;
+	border-color: #afba08 /*{g-active-border}*/;
+	color: #ffffff /*{g-active-color}*/;
+	text-shadow: 0 /*{g-active-shadow-x}*/ 1px /*{g-active-shadow-y}*/ 0 /*{g-active-shadow-radius}*/ #f1ff15 /*{g-active-shadow-color}*/;
+}
+/* Active radio button icon */
+.ui-page-theme-g .ui-radio-on:after,
+html .ui-bar-g .ui-radio-on:after,
+html .ui-body-g .ui-radio-on:after,
+html body .ui-group-theme-g .ui-radio-on:after,
+.ui-btn.ui-radio-on.ui-btn-g:after {
+	border-color: #f1ff15 /*{g-active-background-color}*/;
+}
+/* Focus */
+.ui-page-theme-g .ui-btn:focus,
+html .ui-bar-g .ui-btn:focus,
+html .ui-body-g .ui-btn:focus,
+html body .ui-group-theme-g .ui-btn:focus,
+html head + body .ui-btn.ui-btn-g:focus,
+/* Focus buttons and text inputs with div wrap */
+.ui-page-theme-g .ui-focus,
+html .ui-bar-g .ui-focus,
+html .ui-body-g .ui-focus,
+html body .ui-group-theme-g .ui-focus,
+html head + body .ui-btn-g.ui-focus,
+html head + body .ui-body-g.ui-focus {
+	-webkit-box-shadow: 0 0 12px #f1ff15 /*{g-active-background-color}*/;
+	-moz-box-shadow: 0 0 12px #f1ff15 /*{g-active-background-color}*/;
+	box-shadow: 0 0 12px #f1ff15 /*{g-active-background-color}*/;
 }
 
 
