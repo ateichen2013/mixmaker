@@ -77,7 +77,7 @@
     background-color: #f68987;
 }
 
-.modal-body > div:nth-child(2) > div.col-sm-6.div-slider > div > div > div {
+.modal-body > div:nth-child(3) > div.col-sm-6.div-slider > div > div > div {
     background-color: #f68987;
 }
 
@@ -86,7 +86,7 @@
     background-color: #b69cdd;
 }
 
-.modal-body > div:nth-child(2) > div.col-sm-6.div-slider > div > div > div {
+.modal-body > div:nth-child(4) > div.col-sm-6.div-slider > div > div > div {
     background-color: #b69cdd;
 }
 
@@ -95,6 +95,6 @@
     background-color: #fefe00;
 }
 
-.modal-body > div:nth-child(2) > div.col-sm-6.div-slider > div > div > div {
+.modal-body > div:nth-child(5) > div.col-sm-6.div-slider > div > div > div {
     background-color: #fefe00;
 }
