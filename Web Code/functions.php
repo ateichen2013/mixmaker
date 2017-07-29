@@ -45,7 +45,7 @@ function getDrinkModals($_db)
 						</div>
 					</div>
 				</div>
-				<div class="container vertical-center">
+				<div class="container">
 					<div class="row">
 						<div class="col-lg-8 col-lg-offset-2">
 							<div class="modal-body">
